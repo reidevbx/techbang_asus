@@ -1,0 +1,25 @@
+extends  _main/_master
+block content
+  .bg-light
+    .container.py-5
+      .card.p-3.mb-3
+        h1 這是標題1
+        h2 這是標題2
+        h3 這是標題3
+        h4 這是標題4
+        h5 這是標題5
+        h6 這是標題6
+        p 這是一般字體大小 
+        p.small 這是比較小的字
+        p.small.text-muted 這是比較小的字
+        button.btn.btn-primary.btn-lg.btn-block 測試
+        button.btn.btn-light.btn-block 測試
+        button.btn.btn-light.btn-sm.btn-block 測試
+      .card.p-3.mb-3
+        form
+          .form-group
+            label(for="test1").mb-1 姓名
+            input(id="test1" placeholder='測試input').form-control 
+            small.form-text.text-muted 測試文字
+      .card.p-3
+        a(href='/state.html') 狀態頁

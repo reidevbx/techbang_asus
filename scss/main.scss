@@ -1,0 +1,12 @@
+@import "./bootstrap4.6.0/bootstrap-reboot.scss";
+* {
+    font-size: 16px;
+    // border: 1px solid #ccc;
+}
+.container {
+    max-width: 600px;
+}
+.btn-light {
+    background-color: $gray-200;
+    color: $info;
+}
