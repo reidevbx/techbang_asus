@@ -5,53 +5,66 @@ block content
     section.container.mb-4
       .jk-banner
     //保單產品區
-    section.container.mb-5
+    section.container.mb-4
       h4.px-2 熱門保險商品
       p.px-2.text-muted 依照保險種類為您分類、請選擇您需要的保險種類
-      .card.p-3.mb-3.shadow
-        h5 疫苗險
-        ul
-          li 住院1~4日，每次賠1萬
-          li 每次住院實支醫療最高賠償10萬
-          li 住院5日(含)以上，除每次賠1萬外，再賠5萬
-        a(href='#').btn.btn-primary.btn-block 了解更多
-      .card.p-3.mb-3.shadow
-        h5 疫苗險
-        ul
-          li 住院1~4日，每次賠1萬
-          li 每次住院實支醫療最高賠償10萬
-          li 住院5日(含)以上，除每次賠1萬外，再賠5萬
-        a(href='#').btn.btn-primary.btn-block 了解更多
+      .row
+        .col-6
+          .card.p-3.mb-3.shadow
+            img(src="/images/product1.png").card-img-top
+            .card-body.p-0
+              h5.text-center.mb-3 疫苗險
+              a(href='#').btn.btn-primary.btn-block 了解更多
+        .col-6
+          .card.p-3.mb-3.shadow
+            img(src="/images/product1.png").card-img-top
+            .card-body.p-0
+              h5.text-center.mb-3 疫苗險
+              a(href='#').btn.btn-primary.btn-block 了解更多
+        .col-6
+          .card.p-3.mb-3.shadow
+            img(src="/images/product1.png").card-img-top
+            .card-body.p-0
+              h5.text-center.mb-3 疫苗險
+              a(href='#').btn.btn-primary.btn-block 了解更多
     //更多產品
-    section.container.mb-5
-      p.text-muted.text-center 即將推出更多保險產品 
+    section.container.mb-4
+      p.text-muted 🤘🏻 即將推出更多保險產品
+    //block
+    section.container.bg-light.p-2
     //常見問題
-    section.container.mb-5
+    section.container.py-5
       .px-2
         h4.mb-4 常見問題
         .px-0.pt-0.pb-3
           ul.list-group.list-group-flush
-            li.list-group-item.px-0 保險經紀人是什麼？
-            li.list-group-item.px-0 透過保經公司投保的保單，要如何申請理賠？
-            li.list-group-item.px-0.border-bottom 保險經紀人公司的收入來源？
+            li.list-group-item.px-0
+              h6.mb-0 保險經紀人是什麼？
+            li.list-group-item.px-0
+              h6.mb-0 透過保經公司投保的保單，要如何申請理賠？
+            li.list-group-item.px-0.border-bottom 
+              h6.mb-0 保險經紀人公司的收入來源？
         a(href="#") 看更多問題
     //關於
-    section.container
+    section.container.pb-4
       .px-2
-        h4.mb-4 關於 {產品服務名稱}
+        h4.mb-5 關於 {產品服務名稱}
         ul.list-unstyled
           li.media
-            img(src="..." alt="...").mr-3
+            div(style="width: 4rem").mr-3
+              img(src="/images/product1.png" alt="...").w-100
             .media-body
               h5 永遠多為客戶想一點
               P.text-muted 由顧客需求出發，為您推薦最合適的產品，保障您的重要事物。
           li.media
-            img(src="..." alt="...").mr-3
+            div(style="width: 4rem").mr-3
+              img(src="/images/product1.png" alt="...").w-100
             .media-body
               h5 投保只要輕鬆點一點
               P.text-muted 擁抱數位科技的力量，為您帶來優化的網路投保體驗，讓您與保障的距離，只在彈指之間。
           li.media
-            img(src="..." alt="...").mr-3
+            div(style="width: 4rem").mr-3
+              img(src="/images/product1.png" alt="...").w-100
             .media-body
               h5 保險產品容易懂一點
               P.text-muted 在資訊爆炸的年代，提供您最需要的訊息。保險產品的關鍵資訊，都將觸手可及。
@@ -76,9 +89,9 @@ block content
         h5.mb-3 服務條款
         ul.list-unstyled
           li.px-0.py-2.border-bottom
-            a(href="#") 保險經紀人公司經營電子商務自律規範
+            a(href="#").text-decoration-none 保險經紀人公司經營電子商務自律規範
           li.px-0.py-2.border-bottom
-            a(href="#") 網站隱私權保護政策
+            a(href="#").text-decoration-none 網站隱私權保護政策
     //版權宣告
     section.container.mb-5
       p.text-muted.text-center © 2021 bolttech保特保經 版權所有

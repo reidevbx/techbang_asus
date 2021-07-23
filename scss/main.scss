@@ -3,8 +3,14 @@
     font-size: 16px;
     // border: 1px solid #ccc;
 }
+
+p,a,li{
+    font-size: 0.95rem;
+}
 .container {
     max-width: 600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .btn-light {
     background-color: $gray-200;
