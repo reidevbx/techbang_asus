@@ -286,3 +286,55 @@ p, a, li {
   width: 100%;
   height: 300px;
   background-color: #ccc; }
+
+ul.jko-table-list {
+  padding: 0; }
+  ul.jko-table-list li.jko-table-item {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #EDEDF1; }
+    ul.jko-table-list li.jko-table-item .title {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.75rem 0;
+      color: #292734;
+      text-decoration: none; }
+
+.jko-filter-bar {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 0; }
+  .jko-filter-bar ul.jko-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.5rem 0;
+    overflow: scroll;
+    width: 100%; }
+    .jko-filter-bar ul.jko-filter-list li.jko-filter-item {
+      padding: 0.5rem 1rem;
+      border-radius: 10rem;
+      border: 1px solid #EDEDF1;
+      margin-right: 0.5rem;
+      -ms-flex-negative: 0;
+      flex-shrink: 0; }
+      .jko-filter-bar ul.jko-filter-list li.jko-filter-item:first-child {
+        margin-left: 1rem; }
+      .jko-filter-bar ul.jko-filter-list li.jko-filter-item:last-child {
+        margin-right: 1rem; }
+      .jko-filter-bar ul.jko-filter-list li.jko-filter-item.active {
+        background-color: #292734;
+        border: 1px solid #292734;
+        color: #fff; }
