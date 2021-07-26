@@ -7,6 +7,11 @@ block content
         ul.jko-banner-group
           li.jko-banner-item
             img(src="/images/banner_test_1.jpg").w-100
+        ul.jko-banner-pager
+          li.jko-banner-pager-item.active
+          li.jko-banner-pager-item
+          li.jko-banner-pager-item
+          li.jko-banner-pager-item
     //保單產品區
     section.container.mb-4
       h4.px-2 熱門保險商品
@@ -59,14 +64,11 @@ block content
         .px-0.pt-0
           ul.jko-table-list
             li.jko-table-item
-              a(href='#').title 在網路上投保時，個人資料安全嗎？
-              .icon >
+              a(href='#').title.arrow 在網路上投保時，個人資料安全嗎？
             li.jko-table-item
-              a(href='#').title 網路投保有什麼限制條件？
-              .icon >
+              a(href='#').title.arrow 網路投保有什麼限制條件？
             li.jko-table-item
-              a(href='#').title 是否可以為親友網路投保？
-              .icon >
+              a(href='#').title.arrow 是否可以為親友網路投保？
         a(href="/faq.html") 看更多問題
     
   .bg-light
@@ -77,9 +79,11 @@ block content
     section.container.mb-5.bg-light
       .px-2
         h5.mb-3 聯絡資訊
-        ul.list-unstyled
-          li 客戶服務專線：0809-010-272（週間 9:30-17:30）
-          li 客戶服務信箱：exchange.cs@bolttech.tw
+        dl
+          dt.small 客戶服務專線：
+          dd 0809-010-272（週間 9:30-17:30）
+          dt.small 客戶服務信箱：
+          dd exchange.cs@bolttech.tw
     //服務條款
     section.container.mb-5.bg-light
       .px-2

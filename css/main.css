@@ -286,13 +286,43 @@ p, a, li {
   width: 100%;
   background-color: #ccc;
   border-radius: 0.75rem;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .jko-banner ul.jko-banner-group {
     list-style: none;
     padding: 0;
     margin: 0; }
     .jko-banner ul.jko-banner-group li.jko-banner-item {
       width: 100%; }
+  .jko-banner ul.jko-banner-pager {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 5px;
+    margin-left: 50%;
+    padding: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .jko-banner ul.jko-banner-pager li.jko-banner-pager-item {
+      width: 4px;
+      height: 4px;
+      margin-right: 5px;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.5); }
+      .jko-banner ul.jko-banner-pager li.jko-banner-pager-item.active {
+        background-color: #fff;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5); }
+      .jko-banner ul.jko-banner-pager li.jko-banner-pager-item:last-child {
+        margin-right: 0; }
 
 ul.jko-table-list {
   padding: 0; }
@@ -314,7 +344,25 @@ ul.jko-table-list {
       font-weight: 500;
       padding: 0.75rem 0;
       color: #292734;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 100%; }
+      ul.jko-table-list li.jko-table-item .title.arrow {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        ul.jko-table-list li.jko-table-item .title.arrow:after {
+          content: '';
+          width: 2rem;
+          height: 2rem;
+          background-image: url(/images/chevron_right_sm.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-left: auto;
+          -ms-flex-negative: 0;
+          flex-shrink: 0; }
 
 .jko-filter-bar {
   background-color: #fff;
