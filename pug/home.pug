@@ -2,8 +2,11 @@ extends  _main/_master
 block content
   .bg-white
     //輪播廣告
-    section.container.mb-4
-      .jk-banner
+    section.container.mb-4.mt-3
+      .jko-banner
+        ul.jko-banner-group
+          li.jko-banner-item
+            img(src="/images/banner_test_1.jpg").w-100
     //保單產品區
     section.container.mb-4
       h4.px-2 熱門保險商品
@@ -32,24 +35,8 @@ block content
       p.text-muted 🤘🏻 即將推出更多保險產品
     //block
     section.container.bg-light.p-2
-    //常見問題
-    section.container.py-5
-      .px-2
-        h4.mb-4 常見問題
-        .px-0.pt-0
-          ul.jko-table-list
-            li.jko-table-item
-              a(href='#').title 保險經紀人是什麼?
-              .icon >
-            li.jko-table-item
-              a(href='#').title 透過保經公司投保的保單，要如何申請理賠？
-              .icon >
-            li.jko-table-item
-              a(href='#').title 保險經紀人公司的收入來源？
-              .icon >
-        a(href="/faq.html") 看更多問題
     //關於
-    section.container.pb-4
+    section.container.py-4
       .px-2
         h4.mb-5 關於 {產品服務名稱}
         ul.list-unstyled
@@ -57,28 +44,35 @@ block content
             div(style="width: 4rem").mr-3
               img(src="/images/product1.png" alt="...").w-100
             .media-body
-              h5 永遠多為客戶想一點
-              P.text-muted 由顧客需求出發，為您推薦最合適的產品，保障您的重要事物。
+              h5 投保享街口回饋
+              P.text-muted 購買保單時可直接使用街口完成付款，選擇「帳戶付款」還享有街口幣回饋！
           li.media
             div(style="width: 4rem").mr-3
               img(src="/images/product1.png" alt="...").w-100
             .media-body
-              h5 投保只要輕鬆點一點
-              P.text-muted 擁抱數位科技的力量，為您帶來優化的網路投保體驗，讓您與保障的距離，只在彈指之間。
-          li.media
-            div(style="width: 4rem").mr-3
-              img(src="/images/product1.png" alt="...").w-100
-            .media-body
-              h5 保險產品容易懂一點
-              P.text-muted 在資訊爆炸的年代，提供您最需要的訊息。保險產品的關鍵資訊，都將觸手可及。
-          
+              h5 免填寫投保資料
+              P.text-muted 經由您的授權同意後，即可直接使用您於街口留存的資料，投保時不需要重新填寫。
+    //常見問題
+    section.container.pb-4
+      .px-2
+        h4.mb-4 常見問題
+        .px-0.pt-0
+          ul.jko-table-list
+            li.jko-table-item
+              a(href='#').title 在網路上投保時，個人資料安全嗎？
+              .icon >
+            li.jko-table-item
+              a(href='#').title 網路投保有什麼限制條件？
+              .icon >
+            li.jko-table-item
+              a(href='#').title 是否可以為親友網路投保？
+              .icon >
+        a(href="/faq.html") 看更多問題
+    
   .bg-light
     //服務提供
     section.container.mb-5
-      p.text-muted.text-center.pt-4
-        | 本保險服務由
-        a(href="#") 保特保險經紀人
-        | 提供
+      include _main/_bolttech
     //聯絡資訊
     section.container.mb-5.bg-light
       .px-2

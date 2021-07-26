@@ -282,10 +282,17 @@ p, a, li {
   background-color: #EDEDF1;
   color: #42a1fe; }
 
-.jk-banner {
+.jko-banner {
   width: 100%;
-  height: 300px;
-  background-color: #ccc; }
+  background-color: #ccc;
+  border-radius: 0.75rem;
+  overflow: hidden; }
+  .jko-banner ul.jko-banner-group {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .jko-banner ul.jko-banner-group li.jko-banner-item {
+      width: 100%; }
 
 ul.jko-table-list {
   padding: 0; }
