@@ -41,7 +41,7 @@ $red:     #da3751 !default; //jkopay
 $orange:  #ffa14b !default; //jkopay
 $yellow:  #ffdd64 !default; //jkopay
 $green:   #58ca86 !default; //jkopay
-$teal:    #20c997 !default;
+$teal:    #00BAC7 !default; //bolttech
 $cyan:    #17a2b8 !default;
 $brand:  #C9191D; //jkopay
 
@@ -74,6 +74,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+$bolttech:       $teal;//bolttech
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -85,7 +86,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "bolttech":   $bolttech,//bolttech
   ),
   $theme-colors
 );
