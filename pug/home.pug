@@ -15,7 +15,6 @@ block content
     //保單產品區
     section.container.mb-4
       h4.px-2 熱門保險商品
-      p.px-2.text-muted 依照保險種類為您分類、請選擇您需要的保險種類
       .row
         .col-6
           .card.p-3.mb-3.shadow
@@ -37,13 +36,21 @@ block content
               a(href='#').btn.btn-primary.btn-block 了解更多
     //更多產品
     section.container.mb-4
-      p.text-muted 🤘🏻 即將推出更多保險產品
+      p.text-muted 🤘🏻 即將推出更多保險商品，敬請期待！
     //block
     section.container.bg-light.p-2
     //關於
     section.container.py-4
       .px-2
-        h4.mb-5 關於 {產品服務名稱}
+        h4 關於 {產品服務名稱}
+        p.text-muted.mb-4
+          span 本
+          span {服務名稱}
+          span 由
+          span.text-body 街口電子支付
+          span 與
+          span.text-body 保特保險經紀人
+          span 合作提供，讓您三分鐘快速完成網路投保！
         ul.list-unstyled
           li.media
             div(style="width: 4rem").mr-3
@@ -74,7 +81,8 @@ block content
   .bg-light
     //服務提供
     section.container
-      include _main/_bolttech
+      .px-2
+        include _main/_bolttech
     //聯絡資訊
     section.container.mb-5.bg-light
       .px-2
@@ -91,6 +99,8 @@ block content
         ul.list-unstyled
           li.px-0.py-2.border-bottom
             a(href="#").text-decoration-none 保險經紀人公司經營電子商務自律規範
+          li.px-0.py-2.border-bottom
+            a(href="#").text-decoration-none 網站隱私權保護政策
           li.px-0.py-2.border-bottom
             a(href="#").text-decoration-none 網站隱私權保護政策
     //版權宣告

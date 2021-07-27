@@ -16,6 +16,12 @@ p,a,li{
     background-color: $gray-200;
     color: $info;
 }
+.text-bolttech {
+    color: #00BAC7;
+    &:active {
+        color: #00BAC7;
+    }
+}
 
 .jko-banner {
     width: 100%;
