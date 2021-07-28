@@ -270,8 +270,26 @@ template {
 * {
   font-size: 16px; }
 
-p, a, li {
+p, a, li, label {
   font-size: 0.95rem; }
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #5C5D65;
+  padding: 9px;
+  border-radius: 2px;
+  display: inline-block; }
+  input[type=checkbox]:active, input[type=checkbox]:checked:active {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1); }
+  input[type=checkbox]:checked {
+    background-color: #C9191D;
+    border: 1px solid #C9191D;
+    background-image: url("data:image/svg+xml,<svg height='18' width='18' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='m11.4 21.5-5.93-5.93-2.01 2.01 7.94 7.94 17.1-17.1-2.01-2.01z' fill='%23fff'/></svg>"); }
+  input[type=checkbox]:disabled {
+    background-color: #EDEDF1;
+    border: 1px solid #B7B8C4; }
 
 .container {
   max-width: 600px;
@@ -393,3 +411,15 @@ ul.jko-table-list {
         background-color: #292734;
         border: 1px solid #292734;
         color: #fff; }
+
+.jko-accrodian-list {
+  margin-bottom: 2rem; }
+  .jko-accrodian-list .jko-accrodian-item {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem; }
+  .jko-accrodian-list .jko-accrodian-collapse {
+    border-top: 1px solid #D9DAE4;
+    padding: 1rem;
+    max-height: 300px;
+    overflow: scroll; }
