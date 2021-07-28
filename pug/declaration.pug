@@ -13,11 +13,13 @@ block content
         .jko-accrodian-item
           .d-flex.align-items-center
             .d-flex.pl-3
-              input(type="checkbox")
-            h6(data-toggle='collapse' href='#collapseExample' aria-expanded='false').p-3.mb-0
+              input(type="checkbox" disabled)
+            h6(data-toggle='collapse' href='#collapseExample' aria-expanded="true").p-3.mb-0
               |  保特保險經紀人網路投保聲明事項
           #collapseExample.collapse
             .jko-accrodian-collapse
+              p.text-danger.text-center
+                |↓ 請閱讀並滑至底端 ↓
               p.mb-0
                 | Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 | Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
@@ -79,5 +81,7 @@ block content
       include _main/_bolttech
       
   script.
-    console.log('test')
+    $('#collapseExample').collapse({
+      toggle: true
+    })
     

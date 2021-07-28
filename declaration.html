@@ -28,12 +28,13 @@
           <div class="jko-accrodian-item">
             <div class="d-flex align-items-center">
               <div class="d-flex pl-3">
-                <input type="checkbox">
+                <input type="checkbox" disabled>
               </div>
-              <h6 class="p-3 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false"> 保特保險經紀人網路投保聲明事項</h6>
+              <h6 class="p-3 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="true"> 保特保險經紀人網路投保聲明事項</h6>
             </div>
             <div class="collapse" id="collapseExample">
               <div class="jko-accrodian-collapse">
+                <p class="text-danger text-center">↓ 請閱讀並滑至底端 ↓</p>
                 <p class="mb-0">
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
@@ -124,6 +125,10 @@
         </div>
       </section>
     </div>
-    <script>console.log('test')</script>
+    <script>
+      $('#collapseExample').collapse({
+        toggle: true
+      })
+    </script>
   </body>
 </html>
