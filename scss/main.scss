@@ -41,7 +41,7 @@ input[type=checkbox] {
     background-color: $gray-200;
     color: $info;
 }
-// modal 對齊方式調整
+// modal 對齊方式與尺寸調整
 .show {
     display: flex !important;
     align-items: center;
@@ -49,6 +49,29 @@ input[type=checkbox] {
 }
 .modal-dialog {
     margin: 0 2rem;
+    position: relative;
+    .floating-btn {
+        position: sticky;
+        background-color: rgba(255,255,255,0.9);
+        box-shadow: $box-shadow;
+        bottom: -0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 10rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        &:after {
+            content: '';
+            background-image: url(/images/ic_to_the_bottom_blue_20.svg);
+            width: 1.2rem;
+            height: 1.2rem; 
+            margin-left: 0.5rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 //首頁banner

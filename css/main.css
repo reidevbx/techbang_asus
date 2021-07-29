@@ -312,7 +312,36 @@ input[type=checkbox] {
   justify-content: center; }
 
 .modal-dialog {
-  margin: 0 2rem; }
+  margin: 0 2rem;
+  position: relative; }
+  .modal-dialog .floating-btn {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    bottom: -0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none; }
+    .modal-dialog .floating-btn:after {
+      content: '';
+      background-image: url(/images/ic_to_the_bottom_blue_20.svg);
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-left: 0.5rem;
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .jko-banner {
   width: 100%;
