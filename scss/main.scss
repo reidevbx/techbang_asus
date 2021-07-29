@@ -52,7 +52,7 @@ input[type=checkbox] {
     position: relative;
     .floating-btn {
         position: sticky;
-        background-color: rgba(255,255,255,0.95);
+        background-color: $white;
         box-shadow: $box-shadow;
         bottom: 0;
         padding: 0.5rem 1rem;
