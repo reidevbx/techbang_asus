@@ -36,10 +36,16 @@ input[type=checkbox] {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+// light button 樣式調整
 .btn-light {
     background-color: $gray-200;
     color: $info;
 }
+// modal 對齊方式調整
+.modal-dialog {
+    margin: 20% 2rem 2rem 2rem;
+}
+
 //首頁banner
 .jko-banner {
     width: 100%;
@@ -116,9 +122,6 @@ ul.jko-table-list {
 
                 }
             }
-        }
-        .icon {
-
         }
     }
 

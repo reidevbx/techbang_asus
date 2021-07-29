@@ -300,6 +300,9 @@ input[type=checkbox] {
   background-color: #EDEDF1;
   color: #42a1fe; }
 
+.modal-dialog {
+  margin: 20% 2rem 2rem 2rem; }
+
 .jko-banner {
   width: 100%;
   background-color: #ccc;
