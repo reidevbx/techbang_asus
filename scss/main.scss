@@ -42,8 +42,13 @@ input[type=checkbox] {
     color: $info;
 }
 // modal 對齊方式調整
+.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
 .modal-dialog {
-    margin: 20% 2rem 2rem 2rem;
+    margin: 0 2rem;
 }
 
 //首頁banner
