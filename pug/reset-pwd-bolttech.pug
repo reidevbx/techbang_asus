@@ -1,0 +1,30 @@
+
+extends  _main/_master
+block content
+  .bg-white.vh-100
+    section.container.pt-4
+      .px-2
+        h3 請重新設定保特會員密碼
+    // opt input
+    section.container.mb-4
+      .px-2
+        form
+          .form-group
+            label(for='') 新密碼
+            input(type="password" placeholder="請輸入新密碼" disabled).form-control
+          .form-group
+            label(for='') 確認新密碼
+            input(type="password" placeholder="請再次輸入新密碼").form-control
+    //按鈕
+    section.container
+      .px-2
+        a(href="#").btn.btn-bolttech.btn-block.disabled 重設密碼
+    //保特logo
+    section.container.mt-5
+      .px-2
+        .d-flex.mb-4.justify-content-center
+          .w-25
+            img(src='/images/bolttech_logo_with_text.png').w-100
+
+
+

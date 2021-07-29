@@ -1,0 +1,24 @@
+extends  _main/_master
+block content
+  .bg-light
+    section.container.pt-4
+      .px-2
+        h3 請輸入您於保特留存的電子信箱
+        p 為了確認您為本人使用，需請您進行身分驗證後，才能重新設定密碼
+    // opt input
+    section.container.mb-4
+      .px-2
+        form
+          .form-group
+            label(for='') 身分字號
+            input(placeholder="A123456789" disabled).form-control
+          .form-group
+            label(for='') 電子信箱
+            input(type="email" placeholder="請輸入您於保特留存的電子信箱").form-control
+    //按鈕
+    section.container
+      .px-2
+        a(href="#").btn.btn-bolttech.btn-block.disabled 確認送出
+
+  
+    
