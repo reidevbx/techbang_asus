@@ -317,10 +317,10 @@ input[type=checkbox] {
   .modal-dialog .floating-btn {
     position: -webkit-sticky;
     position: sticky;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    bottom: -0.5rem;
+    bottom: 0;
     padding: 0.5rem 1rem;
     border-radius: 10rem;
     display: -webkit-box;
