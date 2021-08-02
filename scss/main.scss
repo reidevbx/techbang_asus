@@ -51,6 +51,41 @@ input[type=checkbox] {
     margin: 0 2rem;
     position: relative;
 }
+// jko loading modal
+
+.jko-loading {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: $zindex-modal;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &.mask {
+    background-color: rgba(0,0,0,0.4);
+  }
+  &.show {
+    display: flex;
+  }
+  .jko-loading-modal{
+    width: 10rem;
+    height: 10rem;
+    border-radius: $border-radius-lg;
+    // background-color: rgba(255,255,255,0.8);
+    // backdrop-filter: blur(20px);
+    // filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.bg-0 {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+}
 
 //首頁banner
 .jko-banner {

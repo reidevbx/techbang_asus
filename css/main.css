@@ -315,6 +315,44 @@ input[type=checkbox] {
   margin: 0 2rem;
   position: relative; }
 
+.jko-loading {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1050;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .jko-loading.mask {
+    background-color: rgba(0, 0, 0, 0.4); }
+  .jko-loading.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .jko-loading .jko-loading-modal {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .jko-loading .jko-loading-modal.bg-0 {
+      background-color: rgba(0, 0, 0, 0); }
+
 .jko-banner {
   width: 100%;
   background-color: #ccc;
