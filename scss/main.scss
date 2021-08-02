@@ -50,28 +50,6 @@ input[type=checkbox] {
 .modal-dialog {
     margin: 0 2rem;
     position: relative;
-    .floating-btn {
-        position: sticky;
-        background-color: $white;
-        box-shadow: $box-shadow;
-        bottom: 0;
-        padding: 0.5rem 1rem;
-        border-radius: 10rem;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        &:after {
-            content: '';
-            background-image: url(/images/ic_to_the_bottom_blue_20.svg);
-            width: 1.2rem;
-            height: 1.2rem; 
-            margin-left: 0.5rem;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
 }
 
 //首頁banner
@@ -134,10 +112,10 @@ ul.jko-table-list {
             padding: 0.75rem 0;
             color: $gray-900;
             text-decoration: none;
+            display: flex;
+            align-items: center;
             width: 100%;
             &.arrow {
-                display: flex;
-                align-items: center;
                 &:after {
                     content:'';
                     width: 2rem;
@@ -150,6 +128,20 @@ ul.jko-table-list {
 
                 }
             }
+        }
+        .jko-auto-check {
+          width: 1.2rem;
+          height: 1.2rem;
+          border: 1px solid $gray-700;
+          margin-right: 1rem;
+          flex-shrink: 0;
+          border-radius: 2px;;
+          background-color: $white;
+          &.active {
+            background-color: $primary;
+            border: 1px solid $primary;
+            background-image: url("data:image/svg+xml,<svg height='18' width='18' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='m11.4 21.5-5.93-5.93-2.01 2.01 7.94 7.94 17.1-17.1-2.01-2.01z' fill='%23fff'/></svg>");
+          }
         }
     }
 

@@ -34,34 +34,29 @@
               </div>
               <div class="modal-body" style=" max-height: 50vh; overflow:scroll">
                 <p>文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文</p>
-                <p id="test">測試到底</p><a class="floating-btn" href="#test">請先閱讀完整條款</a>
               </div>
               <div class="modal-footer justify-content-start">
-                <button class="btn btn-block btn-primary" type="button">我同意</button>
+                <button class="btn btn-block btn-primary" type="button">請先閱讀完整條款</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- 條款清單-->
+      <!-- 條款清單 -->
       <section class="container">
         <div class="px-2">
           <ul class="jko-table-list">
-            <li class="jko-table-item">
-              <input class="mr-3" type="checkbox" disabled><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">保特保險經紀人網路投保聲明事項</a>
-            </li>
-            <li class="jko-table-item">
-              <input class="mr-3" type="checkbox" disabled><a class="title arrow" href="#">消費者網路投需求聲明事項</a>
-            </li>
-            <li class="jko-table-item">
-              <input class="mr-3" type="checkbox" disabled><a class="title arrow" href="#">網路投保服務契約書</a>
-            </li>
-            <li class="jko-table-item">
-              <input class="mr-3" type="checkbox" disabled><a class="title arrow" href="#">個人資料蒐集處理利用同意書</a>
-            </li>
-            <li class="jko-table-item">
-              <input class="mr-3" type="checkbox" disabled><a class="title arrow" href="#">履行個人資料保護法告知義務</a>
-            </li>
+            <li class="jko-table-item"><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">
+                <!--閱讀完條款，加入active的class做控制-->
+                <div class="jko-auto-check active"></div><span>保特保險經紀人網路投保聲明事項</span></a></li>
+            <li class="jko-table-item"><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">
+                <div class="jko-auto-check"></div><span>消費者網路投需求聲明事項</span></a></li>
+            <li class="jko-table-item"><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">
+                <div class="jko-auto-check"></div><span>網路投保服務契約書</span></a></li>
+            <li class="jko-table-item"><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">
+                <div class="jko-auto-check"></div><span>個人資料蒐集處理利用同意書</span></a></li>
+            <li class="jko-table-item"><a class="title arrow" href="#" data-toggle="modal" data-target="#exampleModal">
+                <div class="jko-auto-check"></div><span>履行個人資料保護法告知義務</span></a></li>
           </ul>
         </div>
       </section>
@@ -69,7 +64,7 @@
       <section class="container mb-4">
         <div class="px-2 mt-3">
           <div class="d-flex align-items-start">
-            <input class="mr-3" type="checkbox" id="agreeall">
+            <input class="mr-3" type="checkbox" disabled id="agreeall">
             <label class="form-check-label" for="agreeall">本人已閱讀並接受上述文件說明之規定事項，並知悉相關契約書有審閱期間至少五日之規定，本人瞭解並同意進行網路加入會員之申請。</label>
           </div>
         </div>
@@ -80,7 +75,7 @@
       <!--服務提供-->
       <section class="container mb-5 text-center">
         <div class="bolttech">
-          <p class="mb-0 py-4"><span class="text-muted">本保險服務由</span><a class="px-1 text-bolttech" href="">保特保險經紀人</a><span class="text-muted">提供</span></p>
+          <p class="mb-0 py-4"><span class="text-muted">本保險服務由</span><span class="text-bolttech">保特保險經紀人</span><span class="text-muted">提供</span></p>
         </div>
       </section>
     </div>

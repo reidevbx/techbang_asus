@@ -11,8 +11,11 @@ block content
         form
           .form-group
             input(placeholder="請輸入驗證碼" ).form-control
-            a(href='#').small.mt-2 重新發送驗證碼
       .px-2
+          //這邊需要切換，倒數時不可點擊
+          p.text-muted 重新發送驗證碼 (
+            span 44s
+            span )
           a(href='#') 重新發送驗證碼
     //按鈕
     section.container
