@@ -41,16 +41,6 @@ input[type=checkbox] {
     background-color: $gray-200;
     color: $info;
 }
-// modal 對齊方式與尺寸調整
-.show {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-}
-.modal-dialog {
-    margin: 0 2rem;
-    position: relative;
-}
 // jko loading modal
 
 .jko-loading {
