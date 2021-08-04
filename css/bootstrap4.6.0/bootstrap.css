@@ -1769,7 +1769,7 @@ pre {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5C5D65;
+  color: #292734;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #D9DAE4;
@@ -1789,25 +1789,25 @@ pre {
     border: 0; }
   .form-control:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #5C5D65; }
+    text-shadow: 0 0 0 #292734; }
   .form-control:focus {
-    color: #5C5D65;
+    color: #292734;
     background-color: #fff;
     border-color: #bfbfc4;
     outline: 0;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(125, 125, 135, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(125, 125, 135, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #7D7D87;
+    color: #9FA0AB;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #7D7D87;
+    color: #9FA0AB;
     opacity: 1; }
   .form-control::-ms-input-placeholder {
-    color: #7D7D87;
+    color: #9FA0AB;
     opacity: 1; }
   .form-control::placeholder {
-    color: #7D7D87;
+    color: #9FA0AB;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #EDEDF1;
@@ -1822,7 +1822,7 @@ input[type="month"].form-control {
   appearance: none; }
 
 select.form-control:focus::-ms-value {
-  color: #5C5D65;
+  color: #292734;
   background-color: #fff; }
 
 .form-control-file,
@@ -3166,7 +3166,7 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5C5D65;
+  color: #292734;
   text-align: center;
   white-space: nowrap;
   background-color: #EDEDF1;
@@ -3363,7 +3363,7 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5C5D65;
+  color: #292734;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%2342434A' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
   border: 1px solid #D9DAE4;
@@ -3377,7 +3377,7 @@ input[type="button"].btn-block {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(125, 125, 135, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(125, 125, 135, 0.25); }
     .custom-select:focus::-ms-value {
-      color: #5C5D65;
+      color: #292734;
       background-color: #fff; }
   .custom-select[multiple], .custom-select[size]:not([size="1"]) {
     height: auto;
@@ -3390,7 +3390,7 @@ input[type="button"].btn-block {
     display: none; }
   .custom-select:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #5C5D65; }
+    text-shadow: 0 0 0 #292734; }
 
 .custom-select-sm {
   height: calc(1.5em + 0.5rem + 2px);
@@ -3444,7 +3444,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   font-weight: 400;
   line-height: 1.5;
-  color: #5C5D65;
+  color: #292734;
   background-color: #fff;
   border: 1px solid #D9DAE4;
   border-radius: 0.5rem; }
@@ -3458,7 +3458,7 @@ input[type="button"].btn-block {
     height: calc(1.5em + 0.75rem);
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
-    color: #5C5D65;
+    color: #292734;
     content: "Browse";
     background-color: #EDEDF1;
     border-left: inherit;
