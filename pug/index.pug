@@ -30,11 +30,14 @@ block content
             label(for="test1").mb-1 姓名
             input(id="test1" placeholder='測試input' disabled).form-control
           .form-group
-            label(for="test1").mb-1 姓名
-            .input-group
-              input(id="test1" placeholder='測試input').form-control
-              .input-group-append 
-                span.input-group-text 萬元
+            label(for="test1").mb-1 選擇
+            select.form-control.custom-select
+              option default select
+          .form-group
+            label(for="test1").mb-1 選擇
+            select.form-contro.custom-select.is-invalid
+              option default select
+        .alert.alert-danger 驚嘆號的icon移除
 
       .card.p-3.mb-3
         a(href='/home.html') 首頁
