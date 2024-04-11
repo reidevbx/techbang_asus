@@ -6,10 +6,67 @@ html
         title initial project
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, Viewport-fit=cover')
         meta(name='format-detection', content='telephone=no')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap' rel='stylesheet')
         link(rel='shortcut icon', href='/images/favicon.ico')
-        link(rel='stylesheet', href='/css/bootstrap4.6.0/bootstrap.css')
+        link(rel='stylesheet', href='/css/bootstrap5.3/bootstrap.css')
         link(rel='stylesheet', href='/css/main.css')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css')
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        script(src='/js/bootstrap.min.js')
+        script(src='/js/bootstrap.js')
   body.bg-light
     block content
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
+    script.
+      $(document).ready(function() {
+        const $imageContainer = $('.ta-image-container');
+        const $imagePreview = $('.ta-image-preview');
+        const $previewImage = $imagePreview.find('img');
+
+        // 獲取所有圖片元素
+        const $images = $imageContainer.find('img');
+
+        // 複製所有圖片並添加到容器末尾
+        $imageContainer.append($images.clone());
+
+        // 設置容器的寬度為所有圖片的總寬度
+        const totalWidth = $images.toArray().reduce((total, img) => {
+          return total + $(img).outerWidth(true);
+        }, 0) * 2; // 因為複製了一遍
+        $imageContainer.width(totalWidth);
+
+        $imageContainer.on('click', 'img', function() {
+          $previewImage.attr('src', this.src);
+          $imagePreview.addClass('show');
+        });
+
+        $imagePreview.on('click', function(event) {
+          if (event.target === this) {
+            $imagePreview.removeClass('show');
+          }
+        });
+
+        $imagePreview.on('keydown', function(event) {
+          if (event.key === 'ArrowLeft') {
+            const currentIndex = $images.index($('.ta-image-preview img'));
+            const prevIndex = (currentIndex - 1 + $images.length) % $images.length;
+            $previewImage.attr('src', $images.eq(prevIndex).attr('src'));
+          } else if (event.key === 'ArrowRight') {
+            const currentIndex = $images.index($('.ta-image-preview img'));
+            const nextIndex = (currentIndex + 1) % $images.length;
+            $previewImage.attr('src', $images.eq(nextIndex).attr('src'));
+          }
+        });
+
+        // 重置動畫
+        function resetAnimation() {
+          $imageContainer.removeClass('ta-slider');
+          void $imageContainer[0].offsetWidth; // 觸發重新渲染
+          $imageContainer.addClass('ta-slider');
+        }
+
+        // 每隔 20 秒重置一次動畫
+        setInterval(resetAnimation, 20000);
+      });
+  

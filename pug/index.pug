@@ -2,65 +2,6 @@ extends  _main/_master
 block content
   .bg-light
     .container.py-5
-      .card.p-3.mb-3
-        h1 這是標題1
-        h2 這是標題2
-        h3 這是標題3
-        h4 這是標題4
-        h5 這是標題5
-        h6 這是標題6
-        p 這是一般字體大小 
-        p.small 這是比較小的字
-        p.small.text-muted 這是比較小的字
-        button.btn.btn-primary.btn-lg.btn-block 測試
-        button.btn.btn-bolttech.btn-lg.btn-block 測試
-        button.btn.btn-light.btn-block 測試
-        button.btn.btn-light.btn-sm.btn-block 測試
-      .card.p-3.mb-3
-        form
-          .form-group
-            label(for="test1") 姓名
-            input(id="test1" placeholder='測試input').form-control 
-            small.form-text.text-muted 測試文字
-          .form-group
-            label(for="test1").mb-1 姓名
-            input(id="test1" placeholder='測試input' error).form-control.is-invalid
-            small.form-text.text-danger 測試文字
-          .form-group
-            label(for="test1").mb-1 姓名
-            input(id="test1" placeholder='測試input' disabled).form-control
-          .form-group
-              label(for="test1").mb-1 姓名
-              .input-group
-                input(id="test1" placeholder='測試input').form-control
-                .input-group-append
-                  .input-group-text.bg-white 萬元
-          .form-group
-            label(for="test1").mb-1 選擇
-            select.form-control.custom-select
-              option default select
-          .form-group
-            label(for="test1").mb-1 選擇
-            select.form-contro.custom-select.is-invalid
-              option default select
-        .alert.alert-danger 驚嘆號的icon移除
-
-      .card.p-3.mb-3
-        a(href='/home.html') 首頁
-      .card.p-3.mb-3
-        a(href='/faq.html') 常見問題
-      .card.p-3.mb-3
-        a(href='/declaration.html').mb-3 網路投保聲明書頁
-        a(href='/otp-jkos.html') 街口otp
-      .card.p-3.mb-3
-        a(href='/login-bolttech.html').mb-3 保特登入頁
-        a(href='/forget-pwd-bolttech.html').mb-3 保特忘記密碼
-        a(href='/otp-bolttech.html').mb-3 保特otp
-        a(href='/reset-pwd-bolttech.html') 保特重設密碼
-      .card.p-3.mb-3
-        a(href='/plan.html').mb-3 選擇保險方案（未完成）
-      .card.p-3.mb-3
-        a(href='/state.html').mb-3 狀態頁
-        a(href='/jko-loading-modal.html').mb-3 loading modal
-        a(href='/jkos-loading.html') full page loading
-      
+      .list-group
+        a(href="/project/style.html").list-group-item 樣式表
+        a(href="/project/apr2024.html").list-group-item 樂趣與挑戰的新態度

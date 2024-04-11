@@ -18,7 +18,60 @@
   <body class="bg-light">
     <div class="bg-light">
       <div class="container py-5">
-        <div class="list-group"><a class="list-group-item" href="/project/style.html">樣式表</a><a class="list-group-item" href="/project/apr2024.html">樂趣與挑戰的新態度</a></div>
+        <div class="card p-3 mb-3"> 
+          <h1>這是標題1</h1>
+          <h2>這是標題2</h2>
+          <h3>這是標題3</h3>
+          <h4>這是標題4</h4>
+          <h5>這是標題5</h5>
+          <h6>這是標題6</h6>
+          <p>這是一般字體大小 </p>
+          <p class="small">這是比較小的字</p>
+          <p class="small text-muted">這是比較小的字</p>
+          <button class="btn btn-primary btn-lg btn-block">測試</button>
+          <button class="btn btn-bolttech btn-lg btn-block">測試</button>
+          <button class="btn btn-light btn-block">測試</button>
+          <button class="btn btn-light btn-sm btn-block">測試</button>
+        </div>
+        <div class="card p-3 mb-3">
+          <form>
+            <div class="form-group">
+              <label for="test1">姓名</label>
+              <input class="form-control" id="test1" placeholder="測試input"><small class="form-text text-muted">測試文字</small>
+            </div>
+            <div class="form-group">
+              <label class="mb-1" for="test1">姓名</label>
+              <input class="form-control is-invalid" id="test1" placeholder="測試input" error><small class="form-text text-danger">測試文字</small>
+            </div>
+            <div class="form-group">
+              <label class="mb-1" for="test1">姓名</label>
+              <input class="form-control" id="test1" placeholder="測試input" disabled>
+            </div>
+            <div class="form-group">
+              <label class="mb-1" for="test1">姓名</label>
+              <div class="input-group">
+                <input class="form-control" id="test1" placeholder="測試input">
+                <div class="input-group-append">
+                  <div class="input-group-text bg-white">萬元</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="mb-1" for="test1">選擇</label>
+              <select class="form-control custom-select">
+                <option>default select</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="mb-1" for="test1">選擇</label>
+              <select class="form-contro custom-select is-invalid">
+                <option>default select</option>
+              </select>
+            </div>
+          </form>
+          <div class="alert alert-danger">驚嘆號的icon移除</div>
+          <div class="p">googogogo</div>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

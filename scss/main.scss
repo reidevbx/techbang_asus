@@ -1,221 +1,327 @@
-@import "./bootstrap4.6.0/bootstrap-reboot.scss";
+@import "./bootstrap5.3/bootstrap-reboot.scss";
+
 * {
     font-size: 16px;
     // border: 1px solid #ccc;
 }
-// customize font size
-p,a,li,label{
-    font-size: 0.95rem;
-}
-// customize checkbox
-input[type=checkbox] {
-    -webkit-appearance: none;
-	background-color: #fff;
-	border: 1px solid $gray-700;
-	// box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-	padding: 9px;
-	border-radius: 2px;
-	display: inline-block;
-    // position: relative;
-    &:active,&:checked:active {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
-    }
-    &:checked {
-        background-color: $primary;
-        border: 1px solid $primary;
-        background-image: url("data:image/svg+xml,<svg height='18' width='18' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='m11.4 21.5-5.93-5.93-2.01 2.01 7.94 7.94 17.1-17.1-2.01-2.01z' fill='%23fff'/></svg>");
-    }
-    &:disabled {
-        background-color: $gray-200;
-        border: 1px solid $gray-400;
+h1 {
+    font-size: 2.5rem;
+    @include media-breakpoint-down(md) { 
+        font-size: 2rem;
     }
 }
-//限制最大寬
-.container {
-    max-width: 600px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-// light button 樣式調整
-.btn-light {
-    background-color: $gray-200;
-    color: $info;
-}
-// jko loading modal
-
-.jko-loading {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0);
-  z-index: $zindex-modal;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  &.mask {
-    background-color: rgba(0,0,0,0.4);
-  }
-  &.show {
-    display: flex;
-  }
-  .jko-loading-modal{
-    width: 10rem;
-    height: 10rem;
-    border-radius: $border-radius-lg;
-    // background-color: rgba(255,255,255,0.8);
-    // backdrop-filter: blur(20px);
-    // filter: blur(10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &.bg-0 {
-      background-color: rgba(0,0,0,0);
+h2 {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.25rem;
+    @include media-breakpoint-down(md) { 
+        font-size: 1.8rem;
     }
-  }
 }
-
-//首頁banner
-.jko-banner {
-    width: 100%;
-    background-color: #ccc;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    position: relative;
-    ul.jko-banner-group {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li.jko-banner-item {
-            width: 100%;
-            
-        }
+h3 {
+    font-size: 1.5rem;
+    @include media-breakpoint-down(md) { 
+        font-size: 1.2rem;
     }
-    ul.jko-banner-pager {
-        position: absolute;
-        padding: 0;
-        margin: 0;
-        list-style: none;
+}
+p {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+    line-height: 150%;
+    @include media-breakpoint-down(md) { 
+        font-size: 0.85rem;
+    }
+}
+.p2 {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    @include media-breakpoint-down(md) { 
+        font-size: 1rem;
+    }
+}
+.ta {
+    &-bg-pale-blue {
+        background-color: #DAE8FA;
+    }
+    &-main-kv-1 {
+        height: 60vh;
+        background-image: url(../images/main-kv-1.png);
+        background-position: center;
+        position: relative;
+        padding: 1rem;
         display: flex;
-        bottom: 5px;
-        margin-left: 50%;
-        padding: 0.25rem;
-        background-color: rgba(0,0,0,0.4);
-        border-radius: 20px;
-        transform: translateX(-50%);
-        li.jko-banner-pager-item {
-            width: 4px;
-            height: 4px;
-            margin-right: 5px;
-            border-radius: 2px;
-            background-color: rgba(255,255,255,0.5);
-            &.active {
-              background-color: $white;
-              transform: scale(1.5);
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-}
-//首頁常見問題清單
-ul.jko-table-list {
-    padding: 0;
-    li.jko-table-item {
-        list-style: none;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        border-bottom: 1px solid $gray-200;
-        .title {
-            flex-grow: 1;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 0.75rem 0;
-            color: $gray-900;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
+        &:before {
+            content: '';
+            position: relative;
             width: 100%;
-            &.arrow {
-                &:after {
-                    content:'';
-                    width: 2rem;
-                    height: 2rem;
-                    background-image: url(/images/chevron_right_sm.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    margin-left: auto;
-                    flex-shrink: 0;
-
+            height: 100%;
+            border: 1px solid #fff;
+            border-radius: 0.5rem;
+        }
+        @include media-breakpoint-down(md) { 
+            height: 90vh;
+        }
+        .kv-corner-group {
+            .corner {
+                position: absolute;
+                img {
+                width: 60px;
+                height: 60px;
+                }
+                &.top-left{
+                    top: 30px;
+                    left: 30px;
+                }
+                &.top-right{
+                    top: 30px;
+                    right: 30px;
+                }
+                &.bottom-left{
+                    bottom: 30px;
+                    left: 30px;
+                }
+                &.bottom-right{
+                    bottom: 30px;
+                    right: 30px;
                 }
             }
         }
-        .jko-auto-check {
-          width: 1.2rem;
-          height: 1.2rem;
-          border: 1px solid $gray-700;
-          margin-right: 1rem;
-          flex-shrink: 0;
-          border-radius: 2px;;
-          background-color: $white;
-          &.active {
-            background-color: $primary;
-            border: 1px solid $primary;
-            background-image: url("data:image/svg+xml,<svg height='18' width='18' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path d='m11.4 21.5-5.93-5.93-2.01 2.01 7.94 7.94 17.1-17.1-2.01-2.01z' fill='%23fff'/></svg>");
-          }
+        .kv-slogan {
+            position: absolute;
         }
     }
-
-}
-//常見問題上方filter
-.jko-filter-bar{
-    background-color: $white;
-    margin-bottom: 1rem;
-    padding: 0;
-    ul.jko-filter-list{ 
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    &-main-kv-2{
+        height: 420px;
+        background-position: center;
+        background-image: url(../images/main-kv-2.png);
+        border-radius: 2rem;
+        @include media-breakpoint-down(md) { 
+            height: 260px;
+        }
+    }
+    &-user-image{
+        height: 0px;
+        padding-top: 133%;
+        background-image: url(../images/paddy-protrait-1.png);
+        background-position: center;
+        background-size: 100%; 
+        border-radius: 1.5rem;
+        transition: background-size 0.5s ease;
+        &:hover {
+            background-size: 110%;
+        }
+        @include media-breakpoint-down(md) { 
+            border-radius: 1rem;
+        }
+    }
+    &-image-container-4by3{
+        width: 100%; /* 或者設定為特定的寬度 */
+        height: 0;
+        padding-bottom: 75%; /* 3/4 的高度比例 */
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
+        }
+    }
+    &-zenfone-1 {
+        height: 0px;
+        padding-top: 150%;
+        background-image: url(../images/main-kv-1.png);
+        background-position: center;
+        border-radius: 1rem;
+    }
+    &-nav-link{
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+            &:after {
+                content: '';
+                background-image: url(/images/triangle-down.svg);
+                display: block;
+                height: 15px;
+                background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .ta-user-name-group {
+                position: relative;
+                &:before {
+                    content: "";
+                    background-image: url(/images/sun-part-left.svg);
+                    display: block;
+                    height: 80px;
+                    width: 40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    left: 0;
+                    background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: all 0.3s;
+                    @include media-breakpoint-down(md) { 
+                        display: none;
+                        // height: 40px;
+                        // width: 20px;
+                    }
+                }
+                &:after {
+                    content: "";
+                    background-image: url(/images/sun-part-right.svg);
+                    display: block;
+                    height: 80px;
+                    width: 40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    right: 0;
+                    background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    @include media-breakpoint-down(md) { 
+                        display: none;
+                        // height: 40px;
+                        // width: 20px;
+                    }
+                }
+            }
+            .ta-user-image {
+                outline: 1px solid white;
+                outline-offset: 8px;
+            }
+            
+        }
+    }
+    &-user-name-group {
+        color: white;
+        padding: 1.5rem 3rem;
+        height: 150px;
         display: flex;
-        padding: 0.5rem 0;
-        overflow: scroll;
-        width: 100%;
-        li.jko-filter-item {
-            padding: 0.5rem 1rem;
-            border-radius: 10rem;
-            border: 1px solid $gray-200;
-            margin-right: 0.5rem;
-            flex-shrink: 0;
-            &:first-child {
-                margin-left: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-down(md) { 
+            padding: 0px;
+            height: auto;
+            min-height: 110px;
+        }
+        .name {
+            font-family: "Noto Serif TC", serif;
+            font-size: 1.8rem;
+            @include media-breakpoint-down(md) { 
+                font-size: 1.2rem;
             }
-            &:last-child {
-                margin-right: 1rem;
-            }
-            &.active {
-                background-color: $gray-900;
-                border: 1px solid $gray-900;
-                color: $white;
+        }
+        .title {
+            font-size: 0.85rem;
+            @include media-breakpoint-down(md) { 
+                font-size: 0.75rem;
             }
         }
     }
-}
-//常見問題與投保聲明 自動展開清單
-.jko-accrodian-list {
-    margin-bottom: 2rem;
-    .jko-accrodian-item {
-        background-color: $white;
-        border-radius: $border-radius;
-        margin-bottom: 1rem;
+    &-interview-title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &:before {
+            content: '';
+            background-image: url(/images/sun-part-top.svg);
+            background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40px;
+            margin-bottom: 1rem;;
+        }
     }
-    .jko-accrodian-collapse{
-        border-top: 1px solid $gray-300;
-        padding: 1rem;
-        max-height: 300px;
-        overflow: scroll;
-    }
+    &-image-slider {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none; // 隱藏滾動條
+
+        .ta-image-container {
+            display: inline-block;
+            animation: ta-slider 20s linear infinite;
+            white-space: nowrap;
+
+            img {
+            width: 300px;
+            height: 200px;
+            margin-right: 20px;
+            cursor: pointer;
+            display: inline-block;
+            }
+        }
+
+        @keyframes ta-slider {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-100% + (300px + 20px) * 5)); }
+        }
+
+        .ta-image-container:hover {
+            animation-play-state: paused;
+        }
+        }
+    &-image-preview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+      
+        &.show {
+          opacity: 1;
+          visibility: visible;
+        }
+      
+        img {
+          max-width: 90%;
+          max-height: 90%;
+        }
+      }
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px #B5D2F5;
+    @include media-breakpoint-down(md) { 
+        border-radius: 1rem;
+    }
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0;
+    padding-bottom: 75%;
+  }
+  .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
+    
+  }
