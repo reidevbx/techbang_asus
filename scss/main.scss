@@ -65,6 +65,7 @@ p {
         }
         @include media-breakpoint-down(md) { 
             height: 90vh;
+            background-position: 20% 75%;
         }
         .kv-corner-group {
             .corner {
@@ -156,7 +157,8 @@ p {
         background-repeat: no-repeat;
         border-radius: 1rem;
         @include media-breakpoint-down(md) { 
-            padding-top: 133%;
+            padding-top: 150%;
+            background-position: center;
         }
     }
     &-nav-link{

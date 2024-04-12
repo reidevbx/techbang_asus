@@ -679,6 +679,7 @@ p {
 @media (max-width: 767.98px) {
   .ta-main-kv-1 {
     height: 90vh;
+    background-position: 20% 75%;
   }
 }
 .ta-main-kv-1 .kv-corner-group .corner {
@@ -775,7 +776,8 @@ p {
 }
 @media (max-width: 767.98px) {
   .ta-zenfone-1 {
-    padding-top: 133%;
+    padding-top: 150%;
+    background-position: center;
   }
 }
 .ta-nav-link:hover {
