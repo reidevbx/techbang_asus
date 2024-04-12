@@ -660,7 +660,7 @@ p {
   height: 60vh;
   min-height: 640px;
   background-image: url(../images/2024040106633.jpg);
-  background-position: center;
+  background-position: 0 75%;
   background-size: cover;
   position: relative;
   padding: 1rem;
@@ -710,10 +710,10 @@ p {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 360px;
-  height: 360px;
-  left: 10%;
-  bottom: 10%;
+  width: 340px;
+  height: 340px;
+  left: 5%;
+  bottom: 5%;
 }
 @media (max-width: 767.98px) {
   .ta-main-kv-1 .kv-slogan {
@@ -767,7 +767,7 @@ p {
   height: 0px;
   padding-top: 56%;
   background-image: url(../images/2024040106620.jpg);
-  background-position: center;
+  background-position: 0 90%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
