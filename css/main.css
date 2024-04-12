@@ -722,6 +722,7 @@ p {
             transform: scale(0.65);
     -webkit-transform-origin: center left;
             transform-origin: center left;
+    left: 7%;
   }
 }
 .ta-main-kv-2 {
