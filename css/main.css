@@ -614,6 +614,7 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 2.25rem;
+  color: #80ABDF;
 }
 @media (max-width: 767.98px) {
   h2 {
@@ -657,8 +658,10 @@ p {
 }
 .ta-main-kv-1 {
   height: 60vh;
-  background-image: url(../images/main-kv-1.png);
+  min-height: 640px;
+  background-image: url(../images/2024040106633.jpg);
   background-position: center;
+  background-size: cover;
   position: relative;
   padding: 1rem;
   display: -webkit-box;
@@ -703,11 +706,28 @@ p {
 }
 .ta-main-kv-1 .kv-slogan {
   position: absolute;
+  background-image: url(/images/main_title.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+  left: 10%;
+  bottom: 10%;
+}
+@media (max-width: 767.98px) {
+  .ta-main-kv-1 .kv-slogan {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
 }
 .ta-main-kv-2 {
   height: 420px;
   background-position: center;
-  background-image: url(../images/main-kv-2.png);
+  background-image: url(../images/2024040106402.jpg);
+  background-size: cover;
   border-radius: 2rem;
 }
 @media (max-width: 767.98px) {
@@ -715,44 +735,41 @@ p {
     height: 260px;
   }
 }
-.ta-user-image {
+.ta-user-image-container {
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.ta-user-image-container .ta-user-image {
+  width: 100%;
   height: 0px;
   padding-top: 133%;
-  background-image: url(../images/paddy-protrait-1.png);
   background-position: center;
-  background-size: 100%;
-  border-radius: 1.5rem;
-  -webkit-transition: background-size 0.5s ease;
-  transition: background-size 0.5s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.ta-user-image:hover {
-  background-size: 110%;
+.ta-user-image-container .ta-user-image-1 {
+  background-image: url(../images/202404016741.jpg);
+}
+.ta-user-image-container .ta-user-image-2 {
+  background-image: url(../images/202404087500.jpg);
+}
+.ta-user-image-container .ta-user-image:hover {
+  scale: 110%;
 }
 @media (max-width: 767.98px) {
-  .ta-user-image {
+  .ta-user-image-container {
     border-radius: 1rem;
   }
 }
-.ta-image-container-4by3 {
-  width: 100%; /* 或者設定為特定的寬度 */
-  height: 0;
-  padding-bottom: 75%; /* 3/4 的高度比例 */
-  position: relative;
-}
-.ta-image-container-4by3 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
-}
 .ta-zenfone-1 {
   height: 0px;
-  padding-top: 150%;
-  background-image: url(../images/main-kv-1.png);
+  padding-top: 56%;
+  background-image: url(../images/2024040106620.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 1rem;
 }
 .ta-nav-link:hover {
@@ -812,7 +829,7 @@ p {
     display: none;
   }
 }
-.ta-nav-link.active .ta-user-image {
+.ta-nav-link.active .ta-user-image-container {
   outline: 1px solid white;
   outline-offset: 8px;
 }
@@ -881,17 +898,18 @@ p {
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
+  border-radius: 4px;
 }
 .ta-image-slider .ta-image-container {
   display: inline-block;
-  -webkit-animation: ta-slider 20s linear infinite;
-          animation: ta-slider 20s linear infinite;
+  -webkit-animation: ta-slider 10s linear infinite;
+          animation: ta-slider 10s linear infinite;
   white-space: nowrap;
+  background-color: black;
 }
 .ta-image-slider .ta-image-container img {
   width: 300px;
-  height: 200px;
-  margin-right: 20px;
+  margin-right: 5px;
   cursor: pointer;
   display: inline-block;
 }
@@ -901,8 +919,8 @@ p {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-100% + 1600px));
-            transform: translateX(calc(-100% + 1600px));
+    -webkit-transform: translateX(calc(-100% + 1525px));
+            transform: translateX(calc(-100% + 1525px));
   }
 }
 @keyframes ta-slider {
@@ -911,8 +929,8 @@ p {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-100% + 1600px));
-            transform: translateX(calc(-100% + 1600px));
+    -webkit-transform: translateX(calc(-100% + 1525px));
+            transform: translateX(calc(-100% + 1525px));
   }
 }
 .ta-image-slider .ta-image-container:hover {
@@ -949,6 +967,21 @@ p {
   max-width: 90%;
   max-height: 90%;
 }
+.ta-cta-btn {
+  padding: 1rem 2rem;
+  color: #80ABDF;
+  background-color: #1A222A;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.ta-cta-btn:hover {
+  background-color: #242f3a;
+}
 
 .swiper {
   width: 100%;
@@ -963,8 +996,12 @@ p {
     border-radius: 1rem;
   }
 }
-
-.swiper-slide {
+.swiper-interview {
+  border-radius: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -980,8 +1017,7 @@ p {
   height: 0;
   padding-bottom: 75%;
 }
-
-.swiper-slide img {
+.swiper .swiper-slide img {
   position: absolute;
   top: 0;
   left: 0;

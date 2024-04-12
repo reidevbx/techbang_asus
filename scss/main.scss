@@ -15,6 +15,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 2.25rem;
+    color: #80ABDF;
     @include media-breakpoint-down(md) { 
         font-size: 1.8rem;
     }
@@ -47,8 +48,10 @@ p {
     }
     &-main-kv-1 {
         height: 60vh;
-        background-image: url(../images/main-kv-1.png);
+        min-height: 640px;
+        background-image: url(../images/2024040106633.jpg);
         background-position: center;
+        background-size: cover;
         position: relative;
         padding: 1rem;
         display: flex;
@@ -90,51 +93,66 @@ p {
         }
         .kv-slogan {
             position: absolute;
+            background-image: url(/images/main_title.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 400px;
+            height: 400px;
+            left: 10%;
+            bottom: 10%;
+            @include media-breakpoint-down(md) { 
+                transform: scale(0.8);
+                transform-origin: top left;
+            }
+
         }
     }
     &-main-kv-2{
         height: 420px;
         background-position: center;
-        background-image: url(../images/main-kv-2.png);
+        background-image: url(../images/2024040106402.jpg);
+        background-size: cover;
         border-radius: 2rem;
         @include media-breakpoint-down(md) { 
             height: 260px;
         }
     }
-    &-user-image{
-        height: 0px;
-        padding-top: 133%;
-        background-image: url(../images/paddy-protrait-1.png);
-        background-position: center;
-        background-size: 100%; 
+    &-user-image-container{
+        overflow: hidden;
         border-radius: 1.5rem;
-        transition: background-size 0.5s ease;
-        &:hover {
-            background-size: 110%;
+        
+        .ta-user-image {
+            width: 100%;
+            height: 0px;
+            padding-top: 133%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease;
+            &-1 {
+                background-image: url(../images/202404016741.jpg);
+            }
+            &-2 {
+                background-image: url(../images/202404087500.jpg);
+            }
+            &:hover {
+                scale: 110%;
+            }
         }
+        
         @include media-breakpoint-down(md) { 
             border-radius: 1rem;
         }
-    }
-    &-image-container-4by3{
-        width: 100%; /* 或者設定為特定的寬度 */
-        height: 0;
-        padding-bottom: 75%; /* 3/4 的高度比例 */
-        position: relative;
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
-        }
+        
     }
     &-zenfone-1 {
         height: 0px;
-        padding-top: 150%;
-        background-image: url(../images/main-kv-1.png);
+        padding-top: 56%;
+        background-image: url(../images/2024040106620.jpg);
         background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 1rem;
     }
     &-nav-link{
@@ -193,7 +211,7 @@ p {
                     }
                 }
             }
-            .ta-user-image {
+            .ta-user-image-container {
                 outline: 1px solid white;
                 outline-offset: 8px;
             }
@@ -245,16 +263,17 @@ p {
         overflow-x: auto;
         white-space: nowrap;
         scrollbar-width: none; // 隱藏滾動條
+        border-radius: 4px;
 
         .ta-image-container {
             display: inline-block;
-            animation: ta-slider 20s linear infinite;
+            animation: ta-slider 10s linear infinite;
             white-space: nowrap;
+            background-color: black;
 
             img {
             width: 300px;
-            height: 200px;
-            margin-right: 20px;
+            margin-right: 5px;
             cursor: pointer;
             display: inline-block;
             }
@@ -262,7 +281,7 @@ p {
 
         @keyframes ta-slider {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-100% + (300px + 20px) * 5)); }
+            100% { transform: translateX(calc(-100% + (300px + 5px) * 5)); }
         }
 
         .ta-image-container:hover {
@@ -294,6 +313,20 @@ p {
           max-height: 90%;
         }
       }
+      &-cta-btn {
+        padding: 1rem 2rem;
+        color: #80ABDF;
+        background-color: #1A222A;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+            background-color: lighten($color: #1A222A, $amount: 5);
+        }
+      }
 }
 .swiper {
     width: 100%;
@@ -304,8 +337,10 @@ p {
     @include media-breakpoint-down(md) { 
         border-radius: 1rem;
     }
+    &-interview {
+    border-radius: 1rem;
+    box-shadow: none ;
   }
-
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -325,3 +360,4 @@ p {
     object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
     
   }
+}

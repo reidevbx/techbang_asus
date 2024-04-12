@@ -12,7 +12,7 @@ block content
                         img(src="/images/sun-bottom-left.svg")
                     .corner.bottom-right
                         img(src="/images/sun-bottom-right.svg")
-                .kv-slogan te
+                .kv-slogan
     section
         .container
             .row.text-center
@@ -33,9 +33,9 @@ block content
                         .swiper.mySwiper
                             .swiper-wrapper
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-1.png")
+                                    img(src="/images/2024040106542.jpg")
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-2.png")
+                                    img(src="/images/2024040106509.jpg")
                             .swiper-pagination
                 .col-12.col-md-6.order-md-1
                     .py-3.py-md-5.pe-md-5
@@ -51,9 +51,9 @@ block content
                         .swiper.mySwiper
                             .swiper-wrapper
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-1.png")
+                                    img(src="/images/2024040106233.jpg")
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-2.png")
+                                    img(src="/images/2024040106387.jpg")
                             .swiper-pagination
                 .col-12.col-md-6
                     .py-3.py-md-5.ps-md-5
@@ -74,9 +74,9 @@ block content
                         .swiper.mySwiper
                             .swiper-wrapper
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-1.png")
+                                    img(src="/images/2024040106701.jpg")
                                 .swiper-slide 
-                                    img(src="/images/pd-feature1-2.png")
+                                    img(src="/images/2024040106618.jpg")
                             .swiper-pagination
                 .col-12.col-md-6.order-md-1
                     .py-3.py-md-5.pe-md-5
@@ -122,17 +122,19 @@ block content
                 .col-5.col-md-3.text-center.py-3
                     p.text-white 人物攝影
                     #user-1-tab.ta-nav-link.active(data-bs-toggle='pill' data-bs-target='#user-1'  aria-controls='user-1' aria-selected='true')
-                        .ta-user-image
+                        .ta-user-image-container
+                            .ta-user-image.ta-user-image-1
                         .ta-user-name-group.text-white
-                            .name Paddy
-                            .title 攝影師推薦人選
+                            .name 地產秘密客
+                            .title 台灣前10大podcast / 社群 / 自媒體 / 房地產專家
                 .col-5.col-md-3.text-center.py-3
                     p.text-white 生活應用類
                     #user-2-tab.ta-nav-link(data-bs-toggle='pill' data-bs-target='#user-2'  aria-controls='user-2' aria-selected='false')
-                        .ta-user-image
+                        .ta-user-image-container
+                            .ta-user-image.ta-user-image-2
                         .ta-user-name-group
-                            .name 地產秘密客
-                            .title 台灣前10大podcast / 社群 / 自媒體 / 房地產專家
+                            .name Paddy
+                            .title 攝影師推薦人選
             .row#v-pills-tabContent.tab-content.bg-white.rounded-5.py-4
                 .col-12#user-1.tab-pane.fade.show.active(aria-labelledby='user-1-tab' tabindex='0')
                     .container-fluid.px-3.px-md-5
@@ -142,31 +144,30 @@ block content
                                 p.p2 這篇採訪文將深入探討ASUS Zenfone 11 Ultra如何滿足專業攝影者的需求。我們將與一位經驗豐富的攝影師進行對話，探討Zenfone 11 Ultra的攝影功能、影像品質和創意應用，並了解他如何通過這款智能手機捕捉生活中的精彩瞬間。
                         .row.py-5.align-items-center.justify-content-center
                             .col-12.col-md-5.order-md-2
-                                .ta-image-container-4by3
-                                    img(src="/images/paddy-kv-1.png").rounded-2
+                                .swiper.mySwiper.swiper-interview
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="/images/202404016689.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404016705.jpg")
+                                    .swiper-pagination
                             .col-12.col-md-5.order-md-1
                                 h3.py-3 從手機攝影到相機攝影，對你而言有什麼不同？
                                 p 手機攝影是我最開始接觸攝影的創作工具，其最大特色在於輕巧便攜，並且大幅省去了許多攝影初學者常遇到的困境，例如：光圈、快門以及感光值之間的權衡；再加上手機沒有光學變焦等特性，使得拍攝上要仰賴雙腿改變與被攝物之間的距離，讓我在構圖觀念的學習上有相當大的助益。然而手機的硬體發展終因須以輕巧便攜為導向，所以在拍攝題材的選擇與表現手法都有諸多侷限，畫質表現上受限於感光元件大小，也無法與高階相機比擬，而為了提升照片的質量與發展更多元的創作題材，便於2018年中決定購入Sony α7 III作為人生第一台數位相機。
                         .row.py-5.justify-content-center.justify-content-center
                             .col-12.col-md-5
-                                .ta-image-container-4by3
-                                    img(src="/images/paddy-kv-1.png").rounded-2
+                                .swiper.mySwiper.swiper-interview
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="/images/202404016767.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/_DSC6948.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404016869.jpg")
+                                    .swiper-pagination
                             .col-12.col-md-5
                                 h3.py-3 從手機攝影到相機攝影，對你而言有什麼不同？
                                 p 手機攝影是我最開始接觸攝影的創作工具，其最大特色在於輕巧便攜，並且大幅省去了許多攝影初學者常遇到的困境，例如：光圈、快門以及感光值之間的權衡；再加上手機沒有光學變焦等特性，使得拍攝上要仰賴雙腿改變與被攝物之間的距離，讓我在構圖觀念的學習上有相當大的助益。然而手機的硬體發展終因須以輕巧便攜為導向，所以在拍攝題材的選擇與表現手法都有諸多侷限，畫質表現上受限於感光元件大小，也無法與高階相機比擬，而為了提升照片的質量與發展更多元的創作題材，便於2018年中決定購入Sony α7 III作為人生第一台數位相機。
-                    .container-fluid
-                        h3.text-center ASUS Zenfone 11 Ultra 實拍作品
-                        .ta-image-slider
-                            .ta-image-container
-                                img(src='/images/paddy-kv-1.png')
-                                img(src='/images/paddy-kv-1.png')
-                                img(src='/images/paddy-kv-1.png')
-                                img(src='/images/paddy-kv-1.png')
-                                img(src='/images/paddy-kv-1.png')
-                               
-                        .ta-image-preview
-                            img(src="" alt="Preview Image")
-
                 .col-12#user-2.tab-pane.fade(aria-labelledby='user-2-tab' tabindex='0') ...
                     .container-fluid.px-3.px-md-5
                         .row.py-5
@@ -175,67 +176,44 @@ block content
                                 p.p2 這篇採訪文將深入探討ASUS Zenfone 11 Ultra如何滿足專業攝影者的需求。我們將與一位經驗豐富的攝影師進行對話，探討Zenfone 11 Ultra的攝影功能、影像品質和創意應用，並了解他如何通過這款智能手機捕捉生活中的精彩瞬間。
                         .row.py-5.align-items-center.justify-content-center
                             .col-12.col-md-5.order-md-2
-                                .ta-image-container-4by3
-                                    img(src="/images/paddy-kv-1.png").rounded-2
+                                .swiper.mySwiper.swiper-interview
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="/images/202404087411.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404087590.jpg")
+                                    .swiper-pagination
                             .col-12.col-md-5.order-md-1
                                 h3.py-3 從手機攝影到相機攝影，對你而言有什麼不同？
                                 p 手機攝影是我最開始接觸攝影的創作工具，其最大特色在於輕巧便攜，並且大幅省去了許多攝影初學者常遇到的困境，例如：光圈、快門以及感光值之間的權衡；再加上手機沒有光學變焦等特性，使得拍攝上要仰賴雙腿改變與被攝物之間的距離，讓我在構圖觀念的學習上有相當大的助益。然而手機的硬體發展終因須以輕巧便攜為導向，所以在拍攝題材的選擇與表現手法都有諸多侷限，畫質表現上受限於感光元件大小，也無法與高階相機比擬，而為了提升照片的質量與發展更多元的創作題材，便於2018年中決定購入Sony α7 III作為人生第一台數位相機。
                         .row.py-5.justify-content-center.justify-content-center
                             .col-12.col-md-5
-                                .ta-image-container-4by3
-                                    img(src="/images/paddy-kv-1.png").rounded-2
+                                .swiper.mySwiper.swiper-interview
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="/images/202404087460.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404087527.jpg")
+                                    .swiper-pagination
                             .col-12.col-md-5
                                 h3.py-3 從手機攝影到相機攝影，對你而言有什麼不同？
                                 p 手機攝影是我最開始接觸攝影的創作工具，其最大特色在於輕巧便攜，並且大幅省去了許多攝影初學者常遇到的困境，例如：光圈、快門以及感光值之間的權衡；再加上手機沒有光學變焦等特性，使得拍攝上要仰賴雙腿改變與被攝物之間的距離，讓我在構圖觀念的學習上有相當大的助益。然而手機的硬體發展終因須以輕巧便攜為導向，所以在拍攝題材的選擇與表現手法都有諸多侷限，畫質表現上受限於感光元件大小，也無法與高階相機比擬，而為了提升照片的質量與發展更多元的創作題材，便於2018年中決定購入Sony α7 III作為人生第一台數位相機。
-    section
+                    .container-fluid
+                        h3.text-center.py-5 ASUS Zenfone 11 Ultra 實拍作品
+                        .ta-image-slider
+                            .ta-image-container
+                                img(src='/images/P_20240219_195238.jpg')
+                                img(src='/images/P_20240315_121115.jpg')
+                                img(src='/images/P_20240315_194428.jpg')
+                        .ta-image-preview
+                            img(src="" alt="Preview Image")
+    section.mb-5
         .container
-            .row.py-5
-                h2.text-center.pt-4 Zenfone 11 Ultra
-            .row.py-4.g-3
-                .col-12.col-md-6
-                    .ta-zenfone-1
-                .col-12.col-md-6
-                    .py-5.px-4.ta-bg-pale-blue.rounded-4
-                        h3 產品規格
-                        p
-                            | 機身尺寸(長*寬*高): 163.8*76.7*8.9mm
-                            br
-                            | 機身重量: 225g
-                            br
-                            | 顏色 12/256：永恆黑 / 晨靛藍 / 迷霧灰 / 珊瑚粉
-                            br
-                            | RAM / ROM
-                            br
-                            | LPDDR5X 12GB/UFS4.0 256GB
-                            br
-                            | IP68防水防塵
-                            br
-                            | 螢幕
-                            br
-                            | 6.78吋 FHD+ (2400x1080 pixels) 柔性 AMOLED 螢幕
-                            br
-                            | 螢幕更新率 LTPO 1~120Hz ，最高144Hz
-                            br
-                            | *144Hz 更新率僅限進行手機遊戲時於遊戲精靈中啟用
-                            br
-                            | Corning Gorilla Glass Victus™ 2
-                            br
-                            | 最高亮度達2,500 尼特
-                            br
-                            | 色彩準確度Delta-E < 1
-                            br
-                            | 107.37% DCI-P3廣色域, 145.99% sRGB 色域,103.16% NTSC色域覆蓋率
-                            br
-                            | 支援 HDR10 / Amazon HDR/YouTube HDR
-                            br
-                            | 支援隨顯螢幕
-                            br
-                            | 電容式觸控螢幕支援10點觸控感應(支援戴手套觸控)
-                            br
-                            | 旗艦處理器
-                            br
-                            | 高通 Snapdragon 8 Gen 處理器 (台積電4奈米製程)，3.3GHz，64位元，八核心處理器
-                            br
-                            | 高通 Qualcomm Adreno™ 750
-
+            .row.pt-5.pb-3
+                h2.text-center.pt-4 AI 雙效合力 再啟新時代
+            .row
+                .col-12
+                    .ta-zenfone-1.position-relative
+                        a(href="").ta-cta-btn 了解更多 Zenphone 11 Ultra
+                    
 
