@@ -751,6 +751,7 @@ p {
 }
 .ta-user-image-container .ta-user-image-1 {
   background-image: url(../images/202404016741.jpg);
+  background-position: 59%;
 }
 .ta-user-image-container .ta-user-image-2 {
   background-image: url(../images/202404087500.jpg);
