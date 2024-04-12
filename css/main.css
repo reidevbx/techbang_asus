@@ -710,17 +710,17 @@ p {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   left: 10%;
   bottom: 10%;
 }
 @media (max-width: 767.98px) {
   .ta-main-kv-1 .kv-slogan {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
   }
 }
 .ta-main-kv-2 {
@@ -771,6 +771,11 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
+}
+@media (max-width: 767.98px) {
+  .ta-zenfone-1 {
+    padding-top: 133%;
+  }
 }
 .ta-nav-link:hover {
   cursor: pointer;
@@ -976,6 +981,7 @@ p {
   position: absolute;
   bottom: 2rem;
   left: 50%;
+  text-wrap: nowrap;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }

@@ -97,13 +97,13 @@ p {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            width: 400px;
-            height: 400px;
+            width: 360px;
+            height: 360px;
             left: 10%;
             bottom: 10%;
             @include media-breakpoint-down(md) { 
-                transform: scale(0.8);
-                transform-origin: top left;
+                transform: scale(0.65);
+                transform-origin: center left;
             }
 
         }
@@ -154,6 +154,9 @@ p {
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 1rem;
+        @include media-breakpoint-down(md) { 
+            padding-top: 133%;
+        }
     }
     &-nav-link{
         &:hover {
@@ -322,6 +325,7 @@ p {
         position: absolute;
         bottom: 2rem;
         left: 50%;
+        text-wrap: nowrap;
         transform: translateX(-50%);
         &:hover {
             background-color: lighten($color: #1A222A, $amount: 5);
