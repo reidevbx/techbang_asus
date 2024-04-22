@@ -652,6 +652,37 @@ p {
   }
 }
 
+.bg-gray {
+  background-color: #E3E2E6;
+}
+
+.ta-bg-ladder {
+  position: relative;
+  z-index: 1;
+}
+.ta-bg-ladder:before {
+  content: "";
+  background-image: url(../images/bg-ladder.png);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 620px;
+  top: 0;
+  z-index: -1;
+}
+.ta-bg-ladder:after {
+  content: "";
+  background-image: url(../images/bg-pattern-left.png);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -150px;
+}
 .ta-bg-right {
   position: relative;
 }
@@ -718,7 +749,6 @@ p {
   background-size: cover;
   left: -80px;
   top: 18px;
-  z-index: -1;
 }
 .ta-h2:after {
   content: "";
@@ -779,7 +809,7 @@ p {
 .ta-main-kv-2 {
   height: 420px;
   background-position: center;
-  background-image: url(../images/2024040106402.jpg);
+  background-image: url(../images/2024040106244.jpg);
   background-size: cover;
 }
 @media (max-width: 767.98px) {
@@ -842,59 +872,13 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-.ta-nav-link.active .ta-user-name-group {
-  position: relative;
-}
-.ta-nav-link.active .ta-user-name-group:before {
-  content: "";
-  background-image: url(/images/sun-part-left.svg);
-  display: block;
-  height: 80px;
-  width: 40px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  left: 0;
-  background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-@media (max-width: 767.98px) {
-  .ta-nav-link.active .ta-user-name-group:before {
-    display: none;
-  }
-}
-.ta-nav-link.active .ta-user-name-group:after {
-  content: "";
-  background-image: url(/images/sun-part-right.svg);
-  display: block;
-  height: 80px;
-  width: 40px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  right: 0;
-  background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media (max-width: 767.98px) {
-  .ta-nav-link.active .ta-user-name-group:after {
-    display: none;
-  }
-}
 .ta-nav-link.active .ta-user-image-container {
-  outline: 1px solid white;
+  outline: 2px solid white;
   outline-offset: 8px;
 }
 .ta-user-name-group {
   color: white;
-  padding: 1.5rem 3rem;
-  height: 150px;
+  padding: 2rem 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,44 +896,6 @@ p {
     height: auto;
     min-height: 110px;
   }
-}
-.ta-user-name-group .name {
-  font-family: "Noto Serif TC", serif;
-  font-size: 1.8rem;
-}
-@media (max-width: 767.98px) {
-  .ta-user-name-group .name {
-    font-size: 1.2rem;
-  }
-}
-.ta-user-name-group .title {
-  font-size: 0.85rem;
-}
-@media (max-width: 767.98px) {
-  .ta-user-name-group .title {
-    font-size: 0.75rem;
-  }
-}
-.ta-interview-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.ta-interview-title:before {
-  content: "";
-  background-image: url(/images/sun-part-top.svg);
-  background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 40px;
-  margin-bottom: 1rem;
 }
 .ta-image-slider {
   width: 100%;
@@ -1032,10 +978,28 @@ p {
   border-radius: 50px;
   text-decoration: none;
   display: inline-block;
+  text-align: center;
   text-wrap: nowrap;
 }
 .ta-cta-btn:hover {
   background-color: #01bff2;
+}
+.ta-spec-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper {
@@ -1045,13 +1009,7 @@ p {
   -webkit-box-shadow: 10px 10px 0px #23374F;
           box-shadow: 10px 10px 0px #23374F;
 }
-@media (max-width: 767.98px) {
-  .swiper {
-    border-radius: 1rem;
-  }
-}
 .swiper-interview {
-  border-radius: 1rem;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
