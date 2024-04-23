@@ -58,6 +58,9 @@ p {
             height: 620px;
             top:0;
             z-index: -1;
+            @include media-breakpoint-down(md) { 
+                height: 360px;
+            }
         }
         &:after {
             content: '';
@@ -70,6 +73,11 @@ p {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: -150px;
+            z-index: -1;
+            @include media-breakpoint-down(md) { 
+                width: 320px;
+                height: 480px;
+            }
         }
     }
     &-bg-right {
@@ -87,6 +95,10 @@ p {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 150px;
+                @include media-breakpoint-down(md) { 
+                    width: 320px;
+                    height: 480px;
+                }
             }
         }
     &-bg-left {
@@ -103,6 +115,10 @@ p {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: -150px;
+                @include media-breakpoint-down(md) { 
+                    width: 320px;
+                    height: 480px;
+                }
             }
         }
     &-h1 {
@@ -118,6 +134,11 @@ p {
             left: -100px;
             bottom: -50%;
             z-index: -1;
+            @include media-breakpoint-down(md) { 
+                width: 100px;
+                height: 100px;
+                left: -60px;
+            }
         }
 
     }
@@ -125,6 +146,10 @@ p {
         position: relative;
         display: flex;
         flex-direction: column;
+        margin-left: 60px;
+        @include media-breakpoint-down(md) { 
+            margin-left: 0;
+        }
         &:before {
             content: '';
             width: 68px;
@@ -136,6 +161,11 @@ p {
             top: 18px;
             // z-index: -1;
             // transform: translateY(50%);
+            @include media-breakpoint-down(md) { 
+                position: relative;
+                left: 0;
+                top: 0;
+            }
         }
         &:after {
             content: '';
@@ -183,6 +213,7 @@ p {
                 transform: scale(0.65);
                 transform-origin: center left;
                 left: 7%;
+                bottom: -5%;
             }
 
         }
@@ -194,6 +225,11 @@ p {
         background-size: cover;
         @include media-breakpoint-down(md) { 
             height: 260px;
+        }
+    }
+    &-main-title {
+        @include media-breakpoint-down(md) { 
+            margin-left: 60px;
         }
     }
     &-user-image-container{
@@ -227,16 +263,39 @@ p {
     }
     &-zenfone-1 {
         height: 0px;
-        padding-top: 56%;
-        background-image: url(../images/2024040106620.jpg);
+        padding-top: 62.5%;
+        background-image: url(../images/2024040106618.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         @include media-breakpoint-down(md) { 
-            padding-top: 150%;
+            // padding-top: 160%;
             background-position: center;
         }
     }
+    &-spec-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 560px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        padding: 2.5rem;
+        justify-content: center;
+        ul {
+            li {
+                font-size: 13px;
+                line-height: 200%;
+            }
+        }
+        @include media-breakpoint-down(md) { 
+            position: relative;
+            right: 0;
+            bottom: 0;
+            // background-position: center;
+        }
+      }
     &-nav-link{
         &:hover {
             cursor: pointer;
@@ -251,51 +310,16 @@ p {
                 background-repeat: no-repeat;
                 background-position: center;
             }
-            // .ta-user-name-group {
-            //     position: relative;
-            //     &:before {
-            //         content: "";
-            //         background-image: url(/images/sun-part-left.svg);
-            //         display: block;
-            //         height: 80px;
-            //         width: 40px;
-            //         top: 50%;
-            //         transform: translateY(-50%);
-            //         position: absolute;
-            //         left: 0;
-            //         background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-            //         background-repeat: no-repeat;
-            //         background-position: center;
-            //         transition: all 0.3s;
-            //         @include media-breakpoint-down(md) { 
-            //             display: none;
-            //             // height: 40px;
-            //             // width: 20px;
-            //         }
-            //     }
-            //     &:after {
-            //         content: "";
-            //         background-image: url(/images/sun-part-right.svg);
-            //         display: block;
-            //         height: 80px;
-            //         width: 40px;
-            //         top: 50%;
-            //         transform: translateY(-50%);
-            //         position: absolute;
-            //         right: 0;
-            //         background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-            //         background-repeat: no-repeat;
-            //         background-position: center;
-            //         @include media-breakpoint-down(md) { 
-            //             display: none;
-            //             // height: 40px;
-            //             // width: 20px;
-            //         }
-            //     }
-            // }
+            .ta-user-name-group {
+                position: relative;
+                
+            }
             .ta-user-image-container {
                 outline: 2px solid white;
                 outline-offset: 8px;
+                @include media-breakpoint-down(md) { 
+                    outline-offset: 4px;
+                }
             }
             
         }
@@ -408,16 +432,7 @@ p {
             background-color: lighten($color: #01ABD9, $amount: 5);
         }
       }
-      &-spec-block {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        right: 5%;
-        bottom: 5%;
-        padding: 3rem;
-        justify-content: center;
-      }
+
 }
 .swiper {
     width: 100%;
