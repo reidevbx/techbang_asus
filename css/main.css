@@ -992,8 +992,8 @@ p {
 }
 .ta-image-slider .ta-image-container {
   display: inline-block;
-  -webkit-animation: ta-slider 10s linear infinite;
-          animation: ta-slider 10s linear infinite;
+  -webkit-animation: ta-slider 100s linear infinite;
+          animation: ta-slider 100s linear infinite;
   white-space: nowrap;
   background-color: black;
 }

@@ -60,18 +60,6 @@ html
           }
         });
 
-        $imagePreview.on('keydown', function(event) {
-          if (event.key === 'ArrowLeft') {
-            const currentIndex = $images.index($('.ta-image-preview img'));
-            const prevIndex = (currentIndex - 1 + $images.length) % $images.length;
-            $previewImage.attr('src', $images.eq(prevIndex).attr('src'));
-          } else if (event.key === 'ArrowRight') {
-            const currentIndex = $images.index($('.ta-image-preview img'));
-            const nextIndex = (currentIndex + 1) % $images.length;
-            $previewImage.attr('src', $images.eq(nextIndex).attr('src'));
-          }
-        });
-
         // 重置動畫
         function resetAnimation() {
           $imageContainer.removeClass('ta-slider');
