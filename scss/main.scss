@@ -180,43 +180,48 @@ p {
         background-color: #E1EEF2;
     }
     &-main-kv-1 {
-        height: 95vh;
-        min-height: 640px;
-        background-image: url(../images/2024040106633.jpg);
-        background-position: 0 100%;
+        height: 0;
+        // min-height: 640px;
+        padding-top: 60%;
+        background-image: url(../images/main-kv-1.png);
+        // background-position: 0 100%;
         background-size: cover;
         position: relative;
         display: flex;
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-        }
         @include media-breakpoint-down(md) { 
-            height: 90vh;
-            background-position: 20% 75%;
+            padding-top: 175%;
+            background-image: url(../images/main-kv-1-mobile.png);
         }
-        .kv-slogan {
-            position: absolute;
-            background-image: url(/images/main-title.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 420px;
-            height: 420px;
-            left: 7%;
-            bottom: 2%;
-            @include media-breakpoint-down(md) { 
-                transform: scale(0.65);
-                transform-origin: center left;
-                left: 7%;
-                bottom: -5%;
-            }
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0;
+        //     width: 100%;
+        //     height: 400px;
+        //     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+        // }
+        // @include media-breakpoint-down(md) { 
+        //     height: 90vh;
+        //     background-position: 20% 75%;
+        // }
+        // .kv-slogan {
+        //     position: absolute;
+        //     background-image: url(/images/main-title.png);
+        //     background-position: center;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        //     width: 420px;
+        //     height: 420px;
+        //     left: 7%;
+        //     bottom: 2%;
+        //     @include media-breakpoint-down(md) { 
+        //         transform: scale(0.65);
+        //         transform-origin: center left;
+        //         left: 7%;
+        //         bottom: -5%;
+        //     }
 
-        }
+        // }
     }
     &-main-kv-2{
         height: 420px;
@@ -265,13 +270,8 @@ p {
         height: 0px;
         padding-top: 62.5%;
         background-image: url(../images/2024040106618.jpg);
-        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        @include media-breakpoint-down(md) { 
-            // padding-top: 160%;
-            background-position: center;
-        }
     }
     &-spec-block {
         display: flex;
