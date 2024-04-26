@@ -76,6 +76,21 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      $(document).ready(function () {
+        // 為按鈕綁定點擊事件
+        $("#toggleMore").click(function () {
+          // 切換元素的顯示或隱藏狀態
+          $("#moreContent").toggle(); // 如果是隱藏的，就顯示；如果是顯示的，就隱藏
+          $(".arrow").toggleClass("arrow-rotate"); // 添加/移除 arrow-rotate 類
+          if ($("#moreContent").is(":visible")) {
+            $(this).find("span").text("收合內容");
+          } else {
+            $(this).find("span").text("展開更多內容");
+          }
+        });
+      });
+    </script>
+    <script>
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -91,22 +106,35 @@
     </script>
     <script>
       $(document).ready(function() {
-        const $imageContainer = $('.ta-image-container');
-        const $imagePreview = $('.ta-image-preview');
-        const $previewImage = $imagePreview.find('img');
-      
-        // 獲取所有圖片元素
+        $('.ta-image-slider').each(function() {
+        const $slider = $(this);
+        const $imageContainer = $slider.find('.ta-image-container');
         const $images = $imageContainer.find('img');
+        const imageCount = $imageContainer.data('image-count');
+        const animationSpeed = $imageContainer.data('animation-speed');
+        const imageWidth = $imageContainer.data('image-width');
+        const imageDirection = $imageContainer.data('direction');
       
-        // 複製所有圖片並添加到容器末尾
+        // 更新滑塊配置
+        $imageContainer.css({
+          '--slider-speed': animationSpeed,
+          '--slider-width': `${imageWidth}px`,
+          '--slider-amount': imageCount,
+          '--slider-direction': imageDirection,
+        });
+      
+        // 複製圖片並添加到容器末尾
         $imageContainer.append($images.clone());
       
-        // 設置容器的寬度為所有圖片的總寬度
+        // 設置容器寬度
         const totalWidth = $images.toArray().reduce((total, img) => {
           return total + $(img).outerWidth(true);
-        }, 0) * 2; // 因為複製了一遍
+        }, 0) * 2;
         $imageContainer.width(totalWidth);
       
+        // 點擊預覽
+        const $imagePreview = $('.ta-image-preview');
+        const $previewImage = $imagePreview.find('img');
         $imageContainer.on('click', 'img', function() {
           $previewImage.attr('src', this.src);
           $imagePreview.addClass('show');
@@ -118,15 +146,17 @@
           }
         });
       
-        // 重置動畫
-        function resetAnimation() {
-          $imageContainer.removeClass('ta-slider');
-          void $imageContainer[0].offsetWidth; // 觸發重新渲染
-          $imageContainer.addClass('ta-slider');
-        }
+        // 每隔 20 秒重置動畫
+        setInterval(function() {
+          resetAnimation($imageContainer);
+        }, 20000);
       
-        // 每隔 20 秒重置一次動畫
-        setInterval(resetAnimation, 20000);
+        function resetAnimation(container) {
+          container.removeClass('ta-slider');
+          void container[0].offsetWidth; // 觸發重新渲染
+          container.addClass('ta-slider');
+        }
+          });
       });
     </script>
   </body>

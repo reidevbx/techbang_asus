@@ -631,7 +631,7 @@ h3 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1px;
   line-height: 150%;
@@ -654,6 +654,10 @@ p {
 
 .bg-gray {
   background-color: #E3E2E6;
+}
+
+#moreContent {
+  display: none;
 }
 
 .ta-bg-ladder {
@@ -806,7 +810,7 @@ p {
 }
 .ta-main-kv-1 {
   height: 0;
-  padding-top: 60%;
+  padding-top: 47.62%;
   background-image: url(../images/main-kv-1.png);
   background-size: cover;
   position: relative;
@@ -825,6 +829,8 @@ p {
   background-position: center;
   background-image: url(../images/2024040106244.jpg);
   background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 @media (max-width: 767.98px) {
   .ta-main-kv-2 {
@@ -904,18 +910,6 @@ p {
 .ta-nav-link:hover {
   cursor: pointer;
 }
-.ta-nav-link.active:after {
-  content: "";
-  background-image: url(/images/triangle-down.svg);
-  display: block;
-  height: 15px;
-  background-size: contain; /* 或者使用 'cover' 或具体的尺寸 */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.ta-nav-link.active .ta-user-name-group {
-  position: relative;
-}
 .ta-nav-link.active .ta-user-image-container {
   outline: 2px solid white;
   outline-offset: 8px;
@@ -924,6 +918,9 @@ p {
   .ta-nav-link.active .ta-user-image-container {
     outline-offset: 4px;
   }
+}
+.ta-nav-link.active .ta-user-name-group .user-arrow {
+  opacity: 1;
 }
 .ta-user-name-group {
   color: white;
@@ -938,6 +935,37 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+.ta-user-name-group .user-arrow {
+  opacity: 0;
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+  position: relative;
+}
+@-webkit-keyframes arrow {
+  0% {
+    bottom: -13px;
+  }
+  50% {
+    bottom: -8px;
+  }
+  100% {
+    bottom: -13px;
+  }
+}
+@keyframes arrow {
+  0% {
+    bottom: -13px;
+  }
+  50% {
+    bottom: -8px;
+  }
+  100% {
+    bottom: -13px;
+  }
 }
 @media (max-width: 767.98px) {
   .ta-user-name-group {
@@ -946,50 +974,107 @@ p {
     min-height: 110px;
   }
 }
+.ta-cta-btn {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #01ABD9;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  text-wrap: nowrap;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ta-cta-btn:hover {
+  background-color: #01bff2;
+}
+.ta-more-btn {
+  padding: 1rem 2rem;
+  color: #01ABD9;
+  border: 1px solid #01ABD9;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+.ta-more-btn:hover {
+  background-color: #E1EEF2;
+}
+
+.arrow {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-image: url(/images/arrow_down.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  /* 平滑過渡 */
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  /* 初始旋轉角度 */
+  display: inline-block;
+  margin-left: 0.5rem;
+  /* 保證箭頭和文字在同一行 */
+}
+
+/* 當內容顯示時，箭頭旋轉 */
+.arrow-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /* 向下旋轉 90 度 */
+}
+
 .ta-image-slider {
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
-  border-radius: 4px;
 }
 .ta-image-slider .ta-image-container {
+  --slider-speed: 30s;
+  --slider-width: 400px;
+  --slider-amount: 5;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: inline-block;
-  -webkit-animation: ta-slider 100s linear infinite;
-          animation: ta-slider 100s linear infinite;
+  -webkit-animation: ta-slider var(--slider-speed) var(--slider-direction) linear infinite;
+          animation: ta-slider var(--slider-speed) var(--slider-direction) linear infinite;
   white-space: nowrap;
-  background-color: black;
 }
 .ta-image-slider .ta-image-container img {
-  width: 300px;
+  width: var(--slider-width);
   margin-right: 5px;
   cursor: pointer;
   display: inline-block;
 }
 @-webkit-keyframes ta-slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-100% + 1525px));
-            transform: translateX(calc(-100% + 1525px));
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 @keyframes ta-slider {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-100% + 1525px));
-            transform: translateX(calc(-100% + 1525px));
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 .ta-image-slider .ta-image-container:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
+
 .ta-image-preview {
   position: fixed;
   top: 0;
@@ -1020,19 +1105,6 @@ p {
   max-width: 90%;
   max-height: 90%;
 }
-.ta-cta-btn {
-  padding: 1rem 2rem;
-  color: #fff;
-  background-color: #01ABD9;
-  border-radius: 50px;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  text-wrap: nowrap;
-}
-.ta-cta-btn:hover {
-  background-color: #01bff2;
-}
 
 .swiper {
   width: 100%;
@@ -1040,6 +1112,12 @@ p {
   overflow: hidden;
   -webkit-box-shadow: 10px 10px 0px #23374F;
           box-shadow: 10px 10px 0px #23374F;
+  scale: 0.9;
+}
+@media (max-width: 767.98px) {
+  .swiper {
+    scale: 1;
+  }
 }
 .swiper-interview {
   -webkit-box-shadow: none;
@@ -1068,5 +1146,6 @@ p {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover; /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
+     object-fit: cover;
+  /* 確保圖片覆蓋整個容器，但可能會被裁剪以符合容器尺寸 */
 }
