@@ -236,7 +236,8 @@ p {
         background-position: center;
         background-image: url(../images/2024040106244.jpg);
         background-size: cover;
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        // box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 
         @include media-breakpoint-down(md) {
             height: 260px;
@@ -325,6 +326,7 @@ p {
             .ta-user-image-container {
                 outline: 2px solid white;
                 outline-offset: 8px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
                 @include media-breakpoint-down(md) {
                     outline-offset: 4px;
@@ -506,6 +508,7 @@ p {
     &-interview {
         // border-radius: 1rem;
         box-shadow: none;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     }
 
     .swiper-slide {
@@ -517,7 +520,9 @@ p {
         align-items: center;
         height: 0;
         padding-bottom: 75%;
+        
     }
+
 
     .swiper-slide img {
         position: absolute;

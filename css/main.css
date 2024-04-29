@@ -829,8 +829,8 @@ p {
   background-position: center;
   background-image: url(../images/2024040106244.jpg);
   background-size: cover;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 @media (max-width: 767.98px) {
   .ta-main-kv-2 {
@@ -913,6 +913,8 @@ p {
 .ta-nav-link.active .ta-user-image-container {
   outline: 2px solid white;
   outline-offset: 8px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 @media (max-width: 767.98px) {
   .ta-nav-link.active .ta-user-image-container {
@@ -1122,6 +1124,8 @@ p {
 .swiper-interview {
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .swiper .swiper-slide {
   text-align: center;
