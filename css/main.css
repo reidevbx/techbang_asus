@@ -892,9 +892,10 @@ p {
 }
 @media (max-width: 767.98px) {
   .ta-h1:before {
-    width: 100px;
-    height: 100px;
-    left: -60px;
+    width: 70px;
+    height: 70px;
+    left: -47px;
+    top: -26px;
   }
 }
 .ta-h2 {
