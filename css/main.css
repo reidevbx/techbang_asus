@@ -710,6 +710,15 @@ p {
   font-size: 13px;
   text-align: center;
 }
+@media (max-width: 767.98px) {
+  .ta-fixed-menu {
+    -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+    scale: 0.7;
+    top: initial;
+    bottom: 10px;
+  }
+}
 .ta-more-arrow {
   -webkit-animation: arrow 1s infinite;
           animation: arrow 1s infinite;
