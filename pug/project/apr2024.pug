@@ -1,92 +1,124 @@
 extends  ../_main/_master
 block content
+    section.ta-fixed-menu
+        ul
+            li
+                a(href="#aiphone") 
+                    img(src='/images/ic_ai.svg')
+                    span
+                        | 新一代AI
+                        br
+                        | 旗艦手機
+            li 
+                a(href="#conversation") 
+                    img(src='/images/ic_conversation.svg')
+                    span
+                        | Zenfone
+                        br
+                        |職人對談
+            li 
+                a(href="#joinnow")
+                    img(src='/images/ic_enroll.svg')
+                    span
+                        | 立即參加
+                        br
+                        | 新機體驗計畫
     section
         .container-fluid.px-0
             .ta-main-kv-1
                 //- .kv-slogan
-    section.ta-bg-right
-        .container
-            .row
-                .col-12.col-md-9.m-auto.py-5.px-4.px-md-0
-                    .py-5
-                        h1.ta-h1.mb-4.ta-main-title AI 手機大進化
-                        h2.ta-h2.py-4 華碩Zenfone 11 Ultra傳承與創新
-                        p.p2.pb-4 華碩在手機攝影上年年進步，近年來更屢次成為消費者相機盲測中，最受歡迎的手機之一，今年華碩在攝影功能上更升級，新的 ASUS Zenfone 11 Ultra 導入三鏡頭設計，新增的望遠鏡頭讓使用者可以拍得更遠更清晰，同時導入了 AI 攝影及 AI 錄影功能，讓手機應用 AI 提供更精緻的成像效果。除此之外，在硬體上升級最新的旗艦處理器，搭配上大螢幕、大電量設計，方方面面形塑出新一代的 AI 旗艦樣貌。
-                        .ta-main-kv-2
-    section.ta-bg-left
-        .container
-            .row
-                .col.col-md-8
-                    h2.ta-h2 翻開 Zenfone 發展史，從相機、效能到使用者應用持續探索新世代旗艦的可能性
-            .row.align-items-center.px-3.px-lg-5
-                .col-12.col-lg-6.order-lg-2
-                    .py-3
-                        .swiper.mySwiper
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    img(src="/images/2024040106691.jpg")
-                                .swiper-slide 
-                                    img(src="/images/2024040106469.jpg")
-                            .swiper-pagination
-                .col-12.col-lg-6.order-lg-1
-                    .py-3.pe-lg-5
-                        h3.py-3 長焦三鏡頭旗艦機 低光拍攝同樣精采
-                        p 華碩耕耘手機拍照技術已久，尤其去年推出的Zenfone 10在攝影更是屢屢獲得消費者肯定，也在國際市場得到專業獎項和專業KOL盛讚。Zenfone 11 Ultra在Zenfone 10 基礎上加入長焦鏡頭，可以拍出望遠壓縮感的照片，更提供最遠30倍望遠變焦功能，換句話說，Zenfone 11 Ultra涵蓋了超廣角、高畫素主鏡頭、3倍光學長焦到4倍甚至30倍超清晰數位變焦都，滿足多元的拍攝焦段。
-                        p 不只高倍變焦很實用，Zenfone 11 Ultra在低光源表現同樣出色，切換到夜景模式就能輕鬆完成拍攝。即使在昏暗的環境，使用Zenfone 11 Ultra的大光圈搭配六軸防手震Hybrid雲台3.0就可以穩穩地拍出清晰照片。
-    section#moreContent
-        .container 
-            .row.align-items-center.px-3.px-lg-5
-                .col-12.col-lg-6
-                    .py-3
-                        .swiper.mySwiper
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    img(src="/images/2024040106402.jpg")
-                                .swiper-slide 
-                                    img(src="/images/2024040106186.jpg")
-                            .swiper-pagination
-                .col-12.col-lg-6
-                    .py-3.ps-lg-5
-                        h3.py-3 AI圖像優化 讓照片自動變美
-                        p Zenfone 11 Ultra的「AI圖像優化」，藉由AI自動辨識，最佳化照片呈現效果，特別適合拍攝記錄小朋友或是毛小孩，如果拍攝旅遊美照，AI也能辨識不同場景，例如人像、藍天、綠地等，讓場景看起來更動人。
-                        p 而喜歡拍限動或reels分享，Zenfone 11 Ultra搭載了AI人像錄影功能，可以讓人像清晰，背景模糊，拍出彷彿電影鏡頭的效果，邊走邊拍也沒問題，超級防手震錄影模式，大幅降低影片晃動的情況，拍攝出來的畫面更滑順穩定。
-            .row.align-items-center.px-3.px-lg-5
-                .col-12.col-lg-6.order-lg-2
-                    .py-3
-                        .swiper.mySwiper
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    img(src="/images/2024040106511.jpg")
-                                .swiper-slide 
-                                    img(src="/images/_DSC6605.jpg")
-                            .swiper-pagination
-                .col-12.col-lg-6.order-lg-1
-                    .py-3.pe-md-5
-                        h3.py-3 進化大螢幕！Zenfone聽到你的心聲
-                        p 6.78吋的Zenfone 11 Ultra，螢幕佔比提升到94%，讓追劇、滑社群媒體視覺體驗更佳，為了追求更好的體驗，最高2500nits高亮度螢幕，豔陽下也不用擔心。另外，螢幕採用新的LTPO柔性AMOLED螢幕，可以自動偵測使用者當下使用情境，依照畫面需要的流暢度在1Hz至120Hz更新率之間切換，兼顧流暢度和省電，甚至針對遊戲還提供了最高144Hz的超高螢幕更新率，讓遊戲體驗更好。
-            .row.align-items-center.px-3.px-lg-5
-                .col-12.col-lg-6
-                    .py-3
-                        .swiper.mySwiper
-                            .swiper-wrapper
-                                .swiper-slide 
-                                    img(src="/images/2024040106233.jpg")
-                                .swiper-slide 
-                                    img(src="/images/2024040106261.jpg")
-                                .swiper-slide 
-                                    img(src="/images/2024040106321.jpg")
-                            .swiper-pagination
-                .col-12.col-lg-6
-                    .py-3.ps-lg-5
-                        h3.py-3 升級旗艦級處理器 滿足AI新時代應用
-                        p 而喜歡拍限動或reels分享，Zenfone 11 Ultra搭載了AI人像錄影功能，可以讓人像清晰，背景模糊，拍出彷彿電影鏡頭的效果，邊走邊拍也沒問題，超級防手震錄影模式，大幅降低影片晃動的情況，拍攝出來的畫面更滑順穩定。
     section
-        .container
-            .row.py-5
-                .col-12.text-center
-                    button.ta-more-btn#toggleMore
-                        span 展開更多內容
-                        .arrow 
+            .container 
+             .row.text-center.py-4
+                .col-12
+                    span.ta-more-text AI手機是什麼？
+                    .ta-more-arrow
+                        img(src='/images/double-arrow.svg')
+    .ta-section-group
+        section.ta-bg-right#aiphone
+            .container
+                .row
+                    .col-12.col-md-9.m-auto.py-5.px-4.px-md-0
+                        .py-5
+                            h1.ta-h1.mb-4.ta-main-title AI 手機大進化
+                            h2.ta-h2.py-4 華碩Zenfone 11 Ultra傳承與創新
+                            p.p2.pb-4 華碩在手機攝影上年年進步，近年來更屢次成為消費者相機盲測中，最受歡迎的手機之一，今年華碩在攝影功能上更升級，新的 ASUS Zenfone 11 Ultra 導入三鏡頭設計，新增的望遠鏡頭讓使用者可以拍得更遠更清晰，同時導入了 AI 攝影及 AI 錄影功能，讓手機應用 AI 提供更精緻的成像效果。除此之外，在硬體上升級最新的旗艦處理器，搭配上大螢幕、大電量設計，方方面面形塑出新一代的 AI 旗艦樣貌。
+                            .ta-main-kv-2
+                
+        section.ta-bg-left
+            .container
+                .row
+                    .col.col-md-8
+                        h2.ta-h2 翻開 Zenfone 發展史，從相機、效能到使用者應用持續探索新世代旗艦的可能性
+                .row.align-items-center.px-3.px-lg-5
+                    .col-12.col-lg-6.order-lg-2
+                        .py-3
+                            .swiper.mySwiper
+                                .swiper-wrapper
+                                    .swiper-slide 
+                                        img(src="/images/2024040106691.jpg")
+                                    .swiper-slide 
+                                        img(src="/images/2024040106469.jpg")
+                                .swiper-pagination
+                    .col-12.col-lg-6.order-lg-1
+                        .py-3.pe-lg-5
+                            h3.py-3 長焦三鏡頭旗艦機 低光拍攝同樣精采
+                            p 華碩耕耘手機拍照技術已久，尤其去年推出的Zenfone 10在攝影更是屢屢獲得消費者肯定，也在國際市場得到專業獎項和專業KOL盛讚。Zenfone 11 Ultra在Zenfone 10 基礎上加入長焦鏡頭，可以拍出望遠壓縮感的照片，更提供最遠30倍望遠變焦功能，換句話說，Zenfone 11 Ultra涵蓋了超廣角、高畫素主鏡頭、3倍光學長焦到4倍甚至30倍超清晰數位變焦都，滿足多元的拍攝焦段。
+                            p 不只高倍變焦很實用，Zenfone 11 Ultra在低光源表現同樣出色，切換到夜景模式就能輕鬆完成拍攝。即使在昏暗的環境，使用Zenfone 11 Ultra的大光圈搭配六軸防手震Hybrid雲台3.0就可以穩穩地拍出清晰照片。
+        section#moreContent
+            .container 
+                .row.align-items-center.px-3.px-lg-5
+                    .col-12.col-lg-6
+                        .py-3
+                            .swiper.mySwiper
+                                .swiper-wrapper
+                                    .swiper-slide 
+                                        img(src="/images/2024040106402.jpg")
+                                    .swiper-slide 
+                                        img(src="/images/2024040106186.jpg")
+                                .swiper-pagination
+                    .col-12.col-lg-6
+                        .py-3.ps-lg-5
+                            h3.py-3 AI圖像優化 讓照片自動變美
+                            p Zenfone 11 Ultra的「AI圖像優化」，藉由AI自動辨識，最佳化照片呈現效果，特別適合拍攝記錄小朋友或是毛小孩，如果拍攝旅遊美照，AI也能辨識不同場景，例如人像、藍天、綠地等，讓場景看起來更動人。
+                            p 而喜歡拍限動或reels分享，Zenfone 11 Ultra搭載了AI人像錄影功能，可以讓人像清晰，背景模糊，拍出彷彿電影鏡頭的效果，邊走邊拍也沒問題，超級防手震錄影模式，大幅降低影片晃動的情況，拍攝出來的畫面更滑順穩定。
+                .row.align-items-center.px-3.px-lg-5
+                    .col-12.col-lg-6.order-lg-2
+                        .py-3
+                            .swiper.mySwiper
+                                .swiper-wrapper
+                                    .swiper-slide 
+                                        img(src="/images/2024040106511.jpg")
+                                    .swiper-slide 
+                                        img(src="/images/_DSC6605.jpg")
+                                .swiper-pagination
+                    .col-12.col-lg-6.order-lg-1
+                        .py-3.pe-md-5
+                            h3.py-3 進化大螢幕！Zenfone聽到你的心聲
+                            p 6.78吋的Zenfone 11 Ultra，螢幕佔比提升到94%，讓追劇、滑社群媒體視覺體驗更佳，為了追求更好的體驗，最高2500nits高亮度螢幕，豔陽下也不用擔心。另外，螢幕採用新的LTPO柔性AMOLED螢幕，可以自動偵測使用者當下使用情境，依照畫面需要的流暢度在1Hz至120Hz更新率之間切換，兼顧流暢度和省電，甚至針對遊戲還提供了最高144Hz的超高螢幕更新率，讓遊戲體驗更好。
+                .row.align-items-center.px-3.px-lg-5
+                    .col-12.col-lg-6
+                        .py-3
+                            .swiper.mySwiper
+                                .swiper-wrapper
+                                    .swiper-slide 
+                                        img(src="/images/2024040106233.jpg")
+                                    .swiper-slide 
+                                        img(src="/images/2024040106261.jpg")
+                                    .swiper-slide 
+                                        img(src="/images/2024040106321.jpg")
+                                .swiper-pagination
+                    .col-12.col-lg-6
+                        .py-3.ps-lg-5
+                            h3.py-3 升級旗艦級處理器 滿足AI新時代應用
+                            p 而喜歡拍限動或reels分享，Zenfone 11 Ultra搭載了AI人像錄影功能，可以讓人像清晰，背景模糊，拍出彷彿電影鏡頭的效果，邊走邊拍也沒問題，超級防手震錄影模式，大幅降低影片晃動的情況，拍攝出來的畫面更滑順穩定。
+        section
+            .container
+                .row.py-5
+                    .col-12.text-center
+                        button.ta-more-btn#toggleMore
+                            span 展開更多內容
+                            .arrow 
     section.ta-bg-pale-blue
         .container.py-5
             .row.py-3.py-lg-4
@@ -102,7 +134,7 @@ block content
                 .col-12.text-center
                     a(href="").ta-cta-btn 了解更多 Zenfone 11 Ultra
             .row.py-3.py-lg-4
-    section.bg-gray.ta-bg-ladder
+    section.bg-gray.ta-bg-ladder#conversation
         .container 
             .row.text-center.pt-5
                 .col.text-center.pt-5.pb-3
@@ -126,7 +158,7 @@ block content
                         .ta-user-image-container
                             .ta-user-image.ta-user-image-2
                         .ta-user-name-group
-                            p 攝影師推薦人選
+                            p 多次國際攝影獎得主
                             a(href="").text-dark  觀看完整訪談 >
                             .user-arrow.mt-2
                                 img(src='/images/triangle-down.svg')
@@ -135,7 +167,7 @@ block content
                     .container-fluid.px-3.px-lg-5
                         .row.py-5
                             .col-12.col-md-8.offset-md-1
-                                h2.ta-h2.py-3 《地產秘密客》的自媒體日常四大升級工作效率的關鍵
+                                h2.ta-h2.py-3 《地產秘密客》的看房法寶！ 專屬AI助理不藏私大公開
                                 p.p2 《地產秘密客》不藏私地分享如何使用Zenfone 11 Ultra來提高工作效率？像是「AI錄音筆記」可以快速整理採訪重點、Podcast摘要來提高效率，以及「AI智慧降噪」讓溝通更無礙。
                                 p.p2 此外，超大螢幕、高亮度和長續航也是亮點。另外，對於時常拍攝建案照片和影片來說，Zenfone 11 Ultra的超廣角可以拍出大空間感，長焦滿足拍攝高處或遠處建材的細節，高畫素主鏡頭更是忠實呈現出質感，能夠更順暢地和大家分享參觀心得。
                         .row.py-5.align-items-center.justify-content-center
@@ -146,44 +178,26 @@ block content
                                             img(src="/images/202404016737.jpg")
                                         .swiper-slide 
                                             img(src="/images/202404016857.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404016887.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/202404016805.jpg")
                                     .swiper-pagination
                             .col-12.col-md-5.order-md-1
-                                h3.py-3 打造房地產自媒體品牌文字、圖像到影片都靠手機完成
+                                h3.py-3 打造房地產自媒體品牌文字、圖像到影片都靠"它"完成
                                 p 擁有15萬粉絲的地產秘密客，由Ting和Sam打造的自媒體品牌，從Facebook、Instagram、YouTube以及Podcast節目地產好學聲分享房地產新訊之外，也會分享生活中與房地產相關的經驗。由於不同平台的受眾性質不太相同，因此Ting和Sam為不同的平台訂下了不同的經營方向，而主要內容包含從文字、圖像到影片都靠手機完成。
                         .row.py-5.align-items-center.justify-content-center
                             .col-12.col-md-5
                                 .swiper.mySwiper.swiper-interview
                                     .swiper-wrapper
                                         .swiper-slide
-                                            img(src="/images/202404016887.jpg")
+                                            img(src="/images/202404016878.jpg")
                                         .swiper-slide 
-                                            img(src="/images/202404016805.jpg")
-
-                                    .swiper-pagination
-                            .col-12.col-md-5
-                                h3.py-3 關鍵一：大螢幕可以提高撰文和剪片效率
-                                p 由於經營的平台多元，因此地產秘密客會善用手機來紀錄迸發的靈感，如果想到適合的主題，馬上用手機記下來，這時候手機的螢幕尺寸就非常重要。Ting說有6.78吋的Zenfone 11 Ultra幫助就很大，輸入文字時，還有足夠的空間可以看內容，這樣寫起來比較流暢，也比較不會出錯。而Sam補充道，大螢幕在剪輯影片上也很好用，而最棒的是大螢幕卻可以有單手握持的手感。
-                        .row.py-5.align-items-center.justify-content-center
-                            .col-12.col-md-5.order-md-2
-                                .swiper.mySwiper.swiper-interview
-                                    .swiper-wrapper
-                                        .swiper-slide
-                                            img(src="/images/202404016737.jpg")
+                                            img(src="/images/202404016689.jpg")
                                         .swiper-slide 
-                                            img(src="/images/202404016857.jpg")
-                                    .swiper-pagination
-                            .col-12.col-md-5.order-md-1
-                                h3.py-3 關鍵二：長焦三鏡頭望遠、超級防手震真實呈現建案樣貌
-                                p 手機攝影是我最開始接觸攝影的創作工具，其最大特色在於輕巧便攜，並且大幅省去了許多攝影初學者常遇到的困境，例如：光圈、快門以及感光值之間的權衡；再加上手機沒有光學變焦等特性，使得拍攝上要仰賴雙腿改變與被攝物之間的距離，讓我在構圖觀念的學習上有相當大的助益。
-                                p 然而手機的硬體發展終因須以輕巧便攜為導向，所以在拍攝題材的選擇與表現手法都有諸多侷限，畫質表現上受限於感光元件大小，也無法與高階相機比擬，而為了提升照片的質量與發展更多元的創作題材，便於2018年中決定購入Sony α7 III作為人生第一台數位相機。
-                        .row.py-5.align-items-center.justify-content-center
-                            .col-12.col-md-5
-                                .swiper.mySwiper.swiper-interview
-                                    .swiper-wrapper
-                                        .swiper-slide
-                                            img(src="/images/202404016887.jpg")
+                                            img(src="/images/202404016705.jpg")
                                         .swiper-slide 
-                                            img(src="/images/202404016805.jpg")
+                                            img(src="/images/202404016769.jpg")
 
                                     .swiper-pagination
                             .col-12.col-md-5
@@ -194,9 +208,11 @@ block content
                                 .swiper.mySwiper.swiper-interview
                                     .swiper-wrapper
                                         .swiper-slide
-                                            img(src="/images/202404016737.jpg")
+                                            img(src="/images/202404016869.jpg")
                                         .swiper-slide 
-                                            img(src="/images/202404016857.jpg")
+                                            img(src="/images/_DSC6951.jpg")
+                                        .swiper-slide 
+                                            img(src="/images/_DSC6960.jpg")
                                     .swiper-pagination
                             .col-12.col-md-5.order-md-1
                                 h3.py-3 關鍵四：個人AI助理「AI錄音筆記」「AI智慧降噪」讓採訪更有效率
@@ -205,6 +221,19 @@ block content
                         .row.py-5.align-items-center.justify-content-center
                             .col-12.text-center
                                 a(href="").ta-cta-btn 完整訪談內容
+                        .row
+                            .ta-image-slider
+                                .ta-image-container(data-image-count='8' data-animation-speed='70s' data-image-width='300' data-direction="reverse")
+                                    img(src='/images/paddy-2/P_20240326_165034.jpg')
+                                    img(src='/images/paddy-2/P_20240413_163523.jpg')
+                                    img(src='/images/paddy-2/P_20240413_170705.jpg')
+                                    img(src='/images/paddy-2/P_20240414_092529.jpg')
+                                    img(src='/images/paddy-2/P_20240315_121115.jpg')
+                                    img(src='/images/paddy-2/P_20240316_113627.jpg')
+                                    img(src='/images/paddy-2/P_20240316_134847.jpg')
+                                    img(src='/images/paddy-2/P_20240316_140744.jpg')
+                            .ta-image-preview
+                                img(src="" alt="Preview Image")
                 //paddy 開始
                 .col-12#user-2.tab-pane.fade(aria-labelledby='user-2-tab' tabindex='0')
                     .container-fluid.px-3.px-lg-5
@@ -253,48 +282,17 @@ block content
                                     .swiper-wrapper
                                         .swiper-slide
                                             img(src="/images/202404087527.jpg")
+                                        .swiper-slide
+                                            img(src="/images/202404087546.jpg")
+                                        .swiper-slide
+                                            img(src="/images/202404087510.jpg")
                                         .swiper-slide 
                                             img(src="/images/P_20240324_163538.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/P_20240316_175915.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/P_20240316_161703.jpg")
                                     .swiper-pagination
                             .col-12.col-md-5.order-md-1
                                 h3.py-3 AI 圖像優化讓作品更為討喜 利用三鏡頭焦段詮釋畫面故事
                                 p 另外，Paddy分享Zenfone 11 Ultra的「AI 圖像優化」功能，自動進行調整，例如讓藍天更藍、綠葉更綠，讓拍攝作品更好看！
                                 p Zenfone 11 Ultra 的超廣角鏡頭就很適合用在建築拍攝上，鏡頭為自由曲面鏡片，能降低邊角變形的情況，建築物的線條該直就直，不會彎曲。而Paddy本身最常用的則是的長焦鏡頭，一讓構圖更簡單、更純粹，二是拍攝人文題材，使用長焦鏡頭拉開距離比較沒有侵略性，而長焦鏡頭獨有的壓縮感，也能迸出不同的新樣貌。拍攝美食也非常適合使用長焦鏡頭，透過長焦鏡頭可以讓視覺焦點落在食物上，自然就能拍出看起來很美味的餐點照。
-                        .row.py-5.align-items-center.justify-content-center
-                            .col-12.col-md-5
-                                .swiper.mySwiper.swiper-interview
-                                    .swiper-wrapper
-                                        .swiper-slide
-                                            img(src="/images/202404087546.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/202404087510.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/P_20240325_160551.jpg")
-                                    .swiper-pagination
-                            .col-12.col-md-5
-                                h3.py-3 不只是最佳攝影夥伴 也是個人AI助理
-                                p Paddy 這次使用 Zenfone 11 Ultra 來拍攝，大概兩週左右的時間就累積了數千張照片，光叫應選出和讀者分享的照片就得花上一點時間，幸好這次 Zenfone 11 Ultra 具備 AI 搜尋助手功能，只要輸入關鍵字就可以快速找到相符的主題，而且關鍵字就算是複合式的關鍵字，或是概略的內容也能搜尋，像是搜尋「彩色 布」，就會找到拍攝長頸族和織布的照片，或是可以搜尋「白色 建築」就會找到相關的圖片。
-                        .row.py-5.align-items-center.justify-content-center
-                            .col-12.col-md-5.order-md-2
-                                .swiper.mySwiper.swiper-interview
-                                    .swiper-wrapper
-                                        .swiper-slide
-                                            img(src="/images/PCC04680.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/202404087460.jpg")
-                                        .swiper-slide 
-                                            img(src="/images/202404087625.jpg")
-                                    .swiper-pagination
-                            .col-12.col-md-5.order-md-1
-                                h3.py-3 高亮度大螢幕和長續航力同樣大幅提升拍攝體驗
-                                p 整體來說，Zenfone 11 Ultra提供涵蓋了 0.7 倍超廣角到 30 倍中望遠的拍攝焦段，加上 AI 圖像優化技術，整體的拍攝體驗是非常順暢的。
-                                p 除了豐富的拍攝功能之外，Paddy提到高亮度的大螢幕和超長的續航力這兩點非常有感。過去在戶外拍攝時，如果豔陽高照可能會遇到螢幕看不太清楚，不過Zenfone 11 Ultra最高2,600nits的峰值亮度，平均亮度也達到 1,700nits，螢幕內容都清晰可見。
-                                p 此外，續航力也讓 Paddy 印象深刻，他算是非常重度的手機使用類型，特別是出國時，手機幾乎會常駐在拍照模式，以這樣激烈操作的模式，一整天使用下來，電池還是有50%以上。Zenfone 11 Ultra具備5,500mAh大電池，透過華碩電池調校可以達到 26.4 小時的超長續航。
-                        
                     .container-fluid.overflow-hidden
                         .row
                             h3.text-center.py-5 ASUS Zenfone 11 Ultra 實拍作品
@@ -308,16 +306,6 @@ block content
                                     img(src='/images/paddy-1/P_20240316_174830.jpg')
                                     img(src='/images/paddy-1/P_20240317_152038.jpg')
                                     img(src='/images/paddy-1/P_20240318_134124.jpg')
-                            .ta-image-slider
-                                .ta-image-container(data-image-count='8' data-animation-speed='70s' data-image-width='300' data-direction="reverse")
-                                    img(src='/images/paddy-2/P_20240326_165034.jpg')
-                                    img(src='/images/paddy-2/P_20240413_163523.jpg')
-                                    img(src='/images/paddy-2/P_20240413_170705.jpg')
-                                    img(src='/images/paddy-2/P_20240414_092529.jpg')
-                                    img(src='/images/paddy-2/P_20240315_121115.jpg')
-                                    img(src='/images/paddy-2/P_20240316_113627.jpg')
-                                    img(src='/images/paddy-2/P_20240316_134847.jpg')
-                                    img(src='/images/paddy-2/P_20240316_140744.jpg')
                             .ta-image-preview
                                 img(src="" alt="Preview Image")
                         .row.py-5.align-items-center.justify-content-center
@@ -329,36 +317,30 @@ block content
                 .col-12.p-0.position-relative
                     .ta-zenfone-1.
                     .ta-spec-block
-                        h3.text-white Zenfone 11 Ultra大視界懂你想拍的
+                        h3.text-white Zenfone 11 Ultra 大視界懂你想拍的
                         ul.text-white.py-4
-                            li 高通® Snapdragon® 8 Gen 3處理器
-                            li 6.78吋 LTPO AMOLED 144Hz 螢幕，最高亮度達2,500尼特
-                            li 主鏡頭：5,000 萬畫素、六軸防手震Hybrid雲台 3.0，自動校正+-3度晃動
-                            li 超廣角鏡頭：1,300 萬畫素、超廣角120°、自由曲面設計鏡片，畫面邊緣不失真
-                            li 長焦鏡頭：3,200 萬畫素、30倍超清晰變焦、3倍光學對焦、OIS光學防手震
-                            li 前鏡頭：3,200 萬畫素、亮顏RGBW感光元件、自拍合照廣角90°
-                            li AI 防手震 – 智慧防手震隨晃動程度保持絕佳視野，超級防手震更升級！ 
-                            li AI人像錄影 -主動即時辨別人臉、貓和狗，呈現自然的景深運鏡。
-                            li AI 圖像優化 - AI精細偵測，再將圖像逐一分層優化，完美呈現每個細節！
-                            li 超清晰變焦 – AI 演算放大影像添加細節，最高可放大30倍。
-                            li AI搜尋助手-相簿、app、設定皆能離線搜尋所需圖片/工具。
-                            li AI語音降噪- 辨識並抑制背景噪音，確保通話聲音品質。
-                            li AI即時通話口譯-雙向翻譯聽筒兩端，從此通話無語言障礙！
-                            li AI錄音筆記-把你的錄音檔案即時轉錄為文字。
-                            li AI智慧桌布-選擇風格、色調，即時打造懂你的風格桌布。
-                            li 4300mAh大電量，日常使用時間長達26.4小時，支援無線充電。
-                            li 永恆黑/迷霧灰/晨靛藍/珊瑚粉
+                            li 高通® S8 Gen 3 旗艦處理器
+                            li 專業六軸防手震Hybrid雲台3.0
+                            li 超廣角鏡頭「自由曲面設計鏡片」畫面不失真
+                            li 長焦鏡頭：3倍光學對焦、OIS光學防手震
+                            li 前鏡頭：亮顏RGBW感光元件、自拍合照廣角90°
+                            li AI旗艦攝影：AI防手震 AI圖像優化 AI人像錄 超清晰變焦
+                            li AI聰明助手：AI 即時通話口譯 AI智慧桌布 AI搜尋助手 AI錄音筆記
+                            li 5500mAh長續航，LTPO AMOLED螢幕
+                            li 永恆黑 / 晨靛藍 / 迷霧灰 / 珊瑚粉
+                            li 8GB/256GB $29,990
+                            li 16GB/512GB $33,990
                         a(href="https://www.asus.com/tw/mobile-handhelds/phones/zenfone/zenfone-11-ultra/?utm_campaign=20240508_zenfone_techbang_zf11utlaunch_wv&utm_source=techbang&utm_medium=banner&utm_content=20240508_zenfone_techbang_zf11utlaunch_wv_zf11ut_productpage-zf11ut-techbang_na_brand" target='blank').ta-cta-btn 了解更多 Zenfone 11 Ultra
-    section.bg-white
+    section.bg-white#joinnow
         .container
+            .row.text-center
+                .col-md-6.col-12.p-4.m-auto
+                    p 2024/05/31前於活動網站預約，Zenfone 11 Ultra讓你帶回家免費試用整整７天，深度體驗Zenfone 11 Ultra拍攝的大視界。體驗期間上傳分享你拍的大視界，有機會抽中一支全新Zenfone 11 Ultra！
             .row
                 .col-12.p-0.m-auto
                     a(href="https://urldefense.com/v3/__https:/www.asus.com/tw/events/infoM/activity_ZF11UT_experience_plan?&utm_campaign=20240508_zenfone_techbang_zf11utlaunch_wv&utm_source=techbang&utm_medium=banner&utm_content=20240508_zenfone_techbang_zf11utlaunch_wv_zf11ut_trialplan-zf11ut-techbang_na_brand__;!!MOA0!bpB5oF8gcMZfd7c_7O654OJHPnXgolLDhCcGMyNf12LDc17OaR3WItO9pbSrHVws6jM_N9cxrhHpv8dZFRcD$" target='blank') 
                         img(src="/images/w900xh350_0326.jpg").w-100
-            .row.text-center
-                .col-md-6.col-12.p-4.m-auto
-                    p 2024/05/31前於活動網站預約，Zenfone 11 Ultra讓你帶回家免費試用整整７天，深度體驗Zenfone 11 Ultra拍攝的大視界。體驗期間上傳分享你拍的大視界，有機會抽中一支全新Zenfone 11 Ultra！
-    //- section
+                //- section
     //-     .container
     //-         .row.text-center.py-2
     //-             .col-12 
