@@ -312,10 +312,10 @@ p {
 
     &-main-kv-1 {
         height: 0;
-        // min-height: 640px;
-        padding-top: 47.62%;
+        padding-top: calc( 100vh - 120px );
+        // padding-top: 47.62%;
         background-image: url(../images/main-kv-1.png);
-        // background-position: 0 100%;
+        background-position: bottom;
         background-size: cover;
         position: relative;
         display: flex;

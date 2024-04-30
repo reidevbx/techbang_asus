@@ -931,8 +931,9 @@ p {
 }
 .ta-main-kv-1 {
   height: 0;
-  padding-top: 47.62%;
+  padding-top: calc(100vh - 120px);
   background-image: url(../images/main-kv-1.png);
+  background-position: bottom;
   background-size: cover;
   position: relative;
   display: -webkit-box;
