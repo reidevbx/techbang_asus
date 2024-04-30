@@ -299,8 +299,10 @@ p {
             // transform: translateY(50%);
             @include media-breakpoint-down(md) {
                 position: relative;
+                width: 48px;
+                height: 36px;
                 left: 0;
-                top: 0;
+                top: -10px;
             }
         }
 
@@ -478,7 +480,7 @@ p {
         @include media-breakpoint-down(md) {
             padding: 0px;
             height: auto;
-            min-height: 110px;
+            min-height: 130px;
         }
     }
 

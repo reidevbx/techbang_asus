@@ -927,8 +927,10 @@ p {
 @media (max-width: 767.98px) {
   .ta-h2:before {
     position: relative;
+    width: 48px;
+    height: 36px;
     left: 0;
-    top: 0;
+    top: -10px;
   }
 }
 .ta-h2:after {
@@ -1096,7 +1098,7 @@ p {
   .ta-user-name-group {
     padding: 0px;
     height: auto;
-    min-height: 110px;
+    min-height: 130px;
   }
 }
 .ta-cta-btn {
