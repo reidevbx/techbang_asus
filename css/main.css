@@ -717,6 +717,8 @@ p {
     scale: 0.7;
     top: initial;
     bottom: 10px;
+    -webkit-transform: initial;
+            transform: initial;
   }
 }
 .ta-more-arrow {
