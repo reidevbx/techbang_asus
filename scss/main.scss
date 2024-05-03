@@ -321,9 +321,9 @@ p {
     }
 
     &-main-kv-1 {
-        height: 0;
-        padding-top: calc( 100vh - 120px );
-        // padding-top: 47.62%;
+        // height: 0;
+        aspect-ratio: 16 / 7.5;
+        // padding-top: calc( 100vh - 120px );
         background-image: url(../images/main-kv-1.png);
         background-position: bottom;
         background-size: cover;
@@ -331,7 +331,8 @@ p {
         display: flex;
 
         @include media-breakpoint-down(md) {
-            padding-top: 150%;
+            aspect-ratio: 2 / 3;
+            // padding-top: 150%;
             background-image: url(../images/main-kv-1-mobile.png);
         }
     }
@@ -369,8 +370,8 @@ p {
             transition: all 0.5s ease;
 
             &-1 {
-                background-image: url(../images/202404016741.jpg);
-                background-position: 59%;
+                background-image: url(../images/202404016737.jpg);
+                background-position: 63%;
             }
 
             &-2 {
@@ -399,7 +400,7 @@ p {
     &-spec-block {
         display: flex;
         flex-direction: column;
-        max-width: 560px;
+        width: 560px;
         background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
         right: 5%;
@@ -416,6 +417,7 @@ p {
 
         @include media-breakpoint-down(md) {
             position: relative;
+            width: 100%;
             right: 0;
             bottom: 0;
             // background-position: center;

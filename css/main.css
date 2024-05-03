@@ -944,8 +944,7 @@ p {
   background-color: #E1EEF2;
 }
 .ta-main-kv-1 {
-  height: 0;
-  padding-top: calc(100vh - 120px);
+  aspect-ratio: 16/7.5;
   background-image: url(../images/main-kv-1.png);
   background-position: bottom;
   background-size: cover;
@@ -956,7 +955,7 @@ p {
 }
 @media (max-width: 767.98px) {
   .ta-main-kv-1 {
-    padding-top: 150%;
+    aspect-ratio: 2/3;
     background-image: url(../images/main-kv-1-mobile.png);
   }
 }
@@ -993,8 +992,8 @@ p {
   transition: all 0.5s ease;
 }
 .ta-user-image-container .ta-user-image-1 {
-  background-image: url(../images/202404016741.jpg);
-  background-position: 59%;
+  background-image: url(../images/202404016737.jpg);
+  background-position: 63%;
 }
 .ta-user-image-container .ta-user-image-2 {
   background-image: url(../images/202404087500.jpg);
@@ -1022,7 +1021,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 560px;
+  width: 560px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   right: 5%;
@@ -1039,6 +1038,7 @@ p {
 @media (max-width: 767.98px) {
   .ta-spec-block {
     position: relative;
+    width: 100%;
     right: 0;
     bottom: 0;
   }
