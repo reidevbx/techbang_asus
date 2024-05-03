@@ -85,11 +85,13 @@
         $imageContainer.on('click', 'img', function() {
           $previewImage.attr('src', this.src);
           $imagePreview.addClass('show');
+          $('.ta-fixed-menu').css('display', 'none');
         });
       
         $imagePreview.on('click', function(event) {
           if (event.target === this) {
             $imagePreview.removeClass('show');
+            $('.ta-fixed-menu').css('display', 'block');
           }
         });
       

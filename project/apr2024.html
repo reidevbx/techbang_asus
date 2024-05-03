@@ -16,13 +16,6 @@
     <script src="/js/bootstrap.js"></script>
   </head>
   <body class="bg-light">
-    <section class="ta-fixed-menu">
-      <ul>
-        <li><a href="#aiphone"> <img src="/images/ic_ai.svg"><span>新一代AI<br>旗艦手機</span></a></li>
-        <li> <a href="#conversation"> <img src="/images/ic_conversation.svg"><span>Zenfone<br>職人對談</span></a></li>
-        <li> <a href="#joinnow"><img src="/images/ic_enroll.svg"><span>立即參加<br>新機體驗計畫</span></a></li>
-      </ul>
-    </section>
     <section>
       <div class="container-fluid px-0">
         <div class="ta-main-kv-1"></div>
@@ -351,8 +344,8 @@
                 <h3 class="text-center py-5">ASUS Zenfone 11 Ultra 實拍作品</h3>
                 <div class="ta-image-slider mb-1">
                   <div class="ta-image-container" data-image-count="8" data-animation-speed="50s" data-image-width="300" data-direction="forwards"><img src="/images/paddy-1/P_20240316_161703-01_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-02_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-03_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-05_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-06_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-07_batch.jpg"><img src="/images/paddy-1/P_20240316_161703-08_batch.jpg"></div>
+                  <div class="ta-image-preview"></div><img src="" alt="Preview Image">
                 </div>
-                <div class="ta-image-preview"><img src="" alt="Preview Image"></div>
               </div>
               <div class="row py-5 align-items-center justify-content-center">
                 <div class="col-12 text-center"><a class="ta-cta-btn" href="">完整訪談內容</a></div>
@@ -399,6 +392,19 @@
           <div class="col-12 p-0 m-auto d-lg-none"><a href="https://urldefense.com/v3/__https:/www.asus.com/tw/events/infoM/activity_ZF11UT_experience_plan?&amp;utm_campaign=20240508_zenfone_techbang_zf11utlaunch_wv&amp;utm_source=techbang&amp;utm_medium=banner&amp;utm_content=20240508_zenfone_techbang_zf11utlaunch_wv_zf11ut_trialplan-zf11ut-techbang_na_brand__;!!MOA0!bpB5oF8gcMZfd7c_7O654OJHPnXgolLDhCcGMyNf12LDc17OaR3WItO9pbSrHVws6jM_N9cxrhHpv8dZFRcD$" target="blank"> <img class="w-100" src="/images/w390xh585_mobile.jpg"></a></div>
           <div class="row py-5 align-items-center justify-content-center">
             <div class="col-12 text-center"><a class="ta-cta-btn" href="https://urldefense.com/v3/__https:/www.asus.com/tw/events/infoM/activity_ZF11UT_experience_plan?&amp;utm_campaign=20240508_zenfone_techbang_zf11utlaunch_wv&amp;utm_source=techbang&amp;utm_medium=banner&amp;utm_content=20240508_zenfone_techbang_zf11utlaunch_wv_zf11ut_trialplan-zf11ut-techbang_na_brand__;!!MOA0!bpB5oF8gcMZfd7c_7O654OJHPnXgolLDhCcGMyNf12LDc17OaR3WItO9pbSrHVws6jM_N9cxrhHpv8dZFRcD$" target="blank">立即預約體驗 7 天</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="ta-fixed-menu">
+            <ul>
+              <li><a href="#aiphone"> <img src="/images/ic_ai.svg"><span>新一代AI<br>旗艦手機</span></a></li>
+              <li> <a href="#conversation"> <img src="/images/ic_conversation.svg"><span>Zenfone<br>職人對談</span></a></li>
+              <li> <a href="#joinnow"><img src="/images/ic_enroll.svg"><span>立即參加<br>新機體驗計畫</span></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -467,11 +473,13 @@
         $imageContainer.on('click', 'img', function() {
           $previewImage.attr('src', this.src);
           $imagePreview.addClass('show');
+          $('.ta-fixed-menu').css('display', 'none');
         });
       
         $imagePreview.on('click', function(event) {
           if (event.target === this) {
             $imagePreview.removeClass('show');
+            $('.ta-fixed-menu').css('display', 'block');
           }
         });
       

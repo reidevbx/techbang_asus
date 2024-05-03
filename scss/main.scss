@@ -63,10 +63,11 @@ p {
 .ta {
     &-fixed-menu {
         position: fixed;
+        width: auto;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 998;
+        z-index: 2;
         background-color: #01ABD9;
         border-radius: 50px;
         padding: 1.5rem 0.5rem;
@@ -294,9 +295,6 @@ p {
             background-size: cover;
             left: -80px;
             top: 18px;
-
-            // z-index: -1;
-            // transform: translateY(50%);
             @include media-breakpoint-down(md) {
                 position: relative;
                 width: 48px;
