@@ -666,7 +666,7 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 999;
+  z-index: 998;
   background-color: #01ABD9;
   border-radius: 50px;
   padding: 1.5rem 0.5rem;
