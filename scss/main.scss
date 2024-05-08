@@ -138,7 +138,7 @@ p {
         overflow: hidden;
         &:before {
             content: '';
-            background-image: url(../images/big-gradient.png);
+            background-image: url(/images/big-gradient.png);
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
@@ -153,7 +153,7 @@ p {
         }
         &:after {
             content: '';
-            background-image: url(../images/big-gradient.png);
+            background-image: url(/images/big-gradient.png);
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
@@ -173,7 +173,7 @@ p {
 
         &:before {
             content: '';
-            background-image: url(../images/bg-ladder.png);
+            background-image: url(/images/bg-ladder.png);
             position: absolute;
             background-size: cover;
             background-repeat: no-repeat;
@@ -189,7 +189,7 @@ p {
 
         &:after {
             content: '';
-            background-image: url(../images/bg-pattern-left.png);
+            background-image: url(/images/bg-pattern-left.png);
             position: absolute;
             left: 0px;
             top: 0px;
@@ -211,7 +211,7 @@ p {
         position: relative;
         &:after {
             content: '';
-            background-image: url(../images/bg-pattern-right.png);
+            background-image: url(/images/bg-pattern-right.png);
             position: absolute;
             z-index: -1;
             right: 0px;
@@ -233,7 +233,7 @@ p {
         position: relative;
         &:after {
             content: '';
-            background-image: url(../images/bg-pattern-left.png);
+            background-image: url(/images/bg-pattern-left.png);
             position: absolute;
             z-index: -2;
             left: 0px;
@@ -260,7 +260,7 @@ p {
             width: 100px;
             height: 100px;
             position: absolute;
-            background-image: url(../images/h1-arrow.png);
+            background-image: url(/images/h1-arrow.png);
             background-size: cover;
             left: -80px;
             bottom: -50%;
@@ -291,7 +291,7 @@ p {
             width: 68px;
             height: 56px;
             position: absolute;
-            background-image: url(../images/h2-arrow.png);
+            background-image: url(/images/h2-arrow.png);
             background-size: cover;
             left: -80px;
             top: 18px;
@@ -322,7 +322,7 @@ p {
         // height: 0;
         aspect-ratio: 16 / 7.5;
         // padding-top: calc( 100vh - 120px );
-        background-image: url(../images/main-kv-1.png);
+        background-image: url(/images/main-kv-1.png);
         background-position: bottom;
         background-size: cover;
         position: relative;
@@ -331,14 +331,14 @@ p {
         @include media-breakpoint-down(md) {
             aspect-ratio: 2 / 3;
             // padding-top: 150%;
-            background-image: url(../images/main-kv-1-mobile.png);
+            background-image: url(/images/main-kv-1-mobile.png);
         }
     }
 
     &-main-kv-2 {
         height: 420px;
         background-position: center;
-        background-image: url(../images/2024040106244.jpg);
+        background-image: url(/images/2024040106244.jpg);
         background-size: cover;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         // box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
@@ -368,12 +368,12 @@ p {
             transition: all 0.5s ease;
 
             &-1 {
-                background-image: url(../images/202404016737.jpg);
+                background-image: url(/images/202404016737.jpg);
                 background-position: 63%;
             }
 
             &-2 {
-                background-image: url(../images/202404087500.jpg);
+                background-image: url(/images/202404087500.jpg);
             }
 
             &:hover {
@@ -390,7 +390,7 @@ p {
     &-zenfone-1 {
         height: 0px;
         padding-top: 62.5%;
-        background-image: url(../images/2024040106618.jpg);
+        background-image: url(/images/2024040106618.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
